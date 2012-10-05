@@ -123,8 +123,8 @@
 			<div class="isa_spacer_4">&nbsp;</div>
 			<div class="isa_button_space" onclick="isa_write(' ');"><a>space</a></div>
 			<div class="isa_button_enter" onclick="isa_write('enter');"><a>&#160;</a></div>
-			<div class="isa_button_tts"><a href="#" id="isa_tts_button" name="isa_tts_button">speak!</a></div>
-			<div class="isa_button_send"><a href="#" id="isa_button_send" name="isa_button_send">send!</a></div>
+			<div class="isa_button_tts"><a href="#" id="isa_tts_button" name="isa_tts_button">parla!</a></div>
+			<div class="isa_button_send"><a href="#" id="isa_button_send" name="isa_button_send">invia!</a></div>
 		</div>
 
 	</div>
@@ -135,7 +135,7 @@
 		<a class="software" href="http://sourceforge.net/projects/eviacam/files/">eViacam</a>
 		<a class="software" href="http://robotica.udl.cat/">HeadMouse</a>
 		<a class="software" href="http://myeye.jimdo.com/download/">myEye</a>
-		<a href="#">credits</a>
+		<a class="credits" href="http://www.informaticisenzafrontiere.org/2012/09/i-s-a-i-speak-again/">credits</a>
 	</div>
 
 </div>
@@ -177,6 +177,8 @@
 <a class="jp-volume-max" href="#">Max</a>
 
 </div>
+
+<iframe name="hiddenframe" width="1" height="1" id="hiddenframe" src="about_blank"></iframe>
 
 </body>
 

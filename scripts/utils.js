@@ -84,5 +84,10 @@ $(document).ready(function() {
 		return false;
 	});
 
-
+	$("#isa_button_send").click(function(e) {
+		$("#hiddenframe").attr("src","http://isf-walks.sinapto.net:9090/index.html?speech=" + encodeURIComponent($('#writtentext').val()));
+		setTimeout("$('#writtentext').val('').focus()",1000);
+		return false;
+	});
+	
 });
