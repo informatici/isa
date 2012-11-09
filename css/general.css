@@ -169,8 +169,17 @@ div.isa_button_send a {
 	height:48%;
 	font:normal 150% Arial,Helvetica,sans-serif;
 	text-align:center;
-	line-height:40px;
+	line-height:36px;
 	cursor:url(../cursors/cur117.cur), progress !important;
+}
+
+div.isa_button_half a.lowercase {
+	margin-top:4px;
+}
+
+div.isa_button_quarter a.lowercaseleft,
+div.isa_button_quarter a.lowercaseright {
+	margin-top:4px;
 }
 
 div.isa_button_backspace a,
