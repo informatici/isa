@@ -33,8 +33,27 @@ function isa_tts() {
 
 }
 
+function isa_resize() {
+	var screen_width = $(window).width();
+	var screen_height = $(window).height();
+	
+	if ((screen_width/screen_height) > 1.5) {
+		$('#container').width(($(window).height()/2)*3);
+		$('#container').height($(window).height());
+	} else {
+		$('#container').width($(window).width());
+		$('#container').height(($(window).width()/3)*2);
+	}
+}
+
 $(document).ready(function() {
 
+	$(window).resize(function() {
+		isa_resize();
+	});
+
+	isa_resize();
+	
 	// Local copy of jQuery selectors, for performance.
 	var	my_jPlayer = $("#jquery_jplayer");
 
@@ -67,7 +86,20 @@ $(document).ready(function() {
 		$(this).blur();
 		return false;
 	});
-	
+
+	// Create click handlers for the different tracks
+	$("#isa_images_content .track img").click(function(e) {
+		$('#speech').val($(this).attr('title'));
+		$.post('ajax_festival.php', $('#speechform').serialize(), function(msg) {
+			my_jPlayer.jPlayer("setMedia", {
+				mp3: "./audio/" + msg
+			}).jPlayer("play");
+		});
+
+		$(this).blur();
+		return false;
+	});
+
 	$("#isa_tts_button").click(function(e) {
 	
 		var comodo = $('#writtentext').val();

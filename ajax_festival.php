@@ -1,12 +1,12 @@
 <?
 include "functions.php";
-$tmpdir = "/var/www/ticketing/isa/tmp";
-$audiodir = "/var/www/ticketing/isa/audio";
+$tmpdir = "/var/www/walks/isa/tmp";
+$audiodir = "/var/www/walks/isa/audio";
 
 if (isset($_POST["speech"]) && ($_POST["speech"] != '')) {
 
 	$speech = stripslashes(trim($_POST["speech"]));
-	$speech = substr($speech, 0, 1024);
+	$speech = substr($speech, 0, 2048);
 	$volume_scale = intval($_POST["volume_scale"]);
 	if ($volume_scale <= 0) { $volume_scale = 1; }
 	if ($volume_scale > 100) { $volume_scale = 100; }
@@ -14,9 +14,9 @@ if (isset($_POST["speech"]) && ($_POST["speech"] != '')) {
 	// continue only if some text was entered for conversion
 	if ($speech != "") {
 		// unique file name
-		$filename = $speech;
-		$filename = trim($filename);
-		$filename = str_replace(" ","",$filename);
+		$filename = substr($speech,0,32);
+		$filename = strtolower(trim($filename));
+		$filename = preg_replace("/[^a-zA-Z0-9]/", "", $filename);
 
 		// other file names
 		$speech_file = "{$tmpdir}/{$filename}";

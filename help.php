@@ -19,14 +19,9 @@
 
 <div id="container">
 
-<div id="homemenu">
+<div id="maincontainer">
 
-<a href="speechboard_base.php?lang=it"><span>SpeechBoard (base)</span></a>
-<a href="speechboard.php?lang=it"><span>SpeechBoard</span></a>
-<a href="imageboard.php?lang=it"><span>ImageBoard</span></a>
-<a href="wordboard.php?lang=it"><span>WordBoard</span></a>
-<a href="software.php"><span>SoftWare</span></a>
-<a href="help.php"><span>Help</span></a>
+help
 
 </div>
 
