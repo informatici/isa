@@ -1,0 +1,18 @@
+Ciao Roberto,
+
+ti allego il file zippato con dentro una demo per poter scrivere post su twitter.
+
+C'e' una premessa da fare:
+Twitter non permette piu' di far scrivere da codice (direttamente tramite curl o altro, sfruttando user e password),
+quindi e' necessario creare un' applicazione su twitter, e una volta creata, si avranno le credenziali per poter fare tutte le operazioni.
+Creare un applicazione su twitter e' semplicissimo e sicuramente gia' lo sai fare, in ogni caso qui un link che lo spiega in modo semplice http://140dev.com/twitter-api-programming-tutorials/hello-twitter-oauth-php/
+
+Per fare delle prove, ti basta scompattare il file su un server e provarlo via http (file iniziale index.html).
+
+La grafica e' inesistente, il codice migliorabile e fatto in fretta, ma tutto sommato l'applicazione e' utilizzabile :)
+
+Ho inserito una cartella "examples" con altre features che possono essere sfruttate in futuro.
+
+Per qualsiasi problema, chiarimenti, o info sono qui.
+
+Spero possa esservi di aiuto, un saluto a tutti e buon lavoro.

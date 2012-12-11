@@ -1,0 +1,90 @@
+body {
+background-color:#fff;
+font-size:0.825em;
+font-family:Arial, Helvetica, sans-serif;
+
+}
+
+#quote1 {
+margin-left:300px;
+margin-right:300px;
+border-style:solid;
+border-width:2px;
+border-color:#74DF00;
+background-color:#EFEFD7;
+line-height: 10px;
+}
+
+#quote2 {
+margin-left:300px;
+margin-right:300px;
+border-style:solid;
+border-width:2px;
+border-color:#74DF00;
+background-color:#EFEFD7;
+line-height: 10px;
+}
+
+h1{
+	padding:30px 0;
+	text-align:center;
+	text-shadow:0 1px 1px white;
+	margin-bottom:30px;
+	background-color:#f8f8f8;
+	font-size:35px;
+}
+
+.focusField {
+    border:solid 2px #73A6FF;
+    background:#EFF5FF;
+    color:#000;
+    }
+.idleField {
+    background:#EEE;
+    color: #6F6F6F;
+    border: solid 2px #DFDFDF;
+    }
+	
+label{
+text-shadow:0 1px 1px white;
+font-size:18px;
+}
+
+
+#bar
+{
+background-color:#5fbbde;
+width:0px;
+height:16px;
+}
+#barbox
+{
+float:right;
+height:16px;
+background-color:#FFFFFF;
+width:100px;
+border:solid 2px #000;
+margin-right:3px;
+-webkit-border-radius:5px;-moz-border-radius:5px;
+}
+#count
+{
+float:right;
+margin-right:8px;
+font-family:'Georgia', Times New Roman, Times, serif;
+font-size:16px;
+font-weight:bold;
+color:#666666
+}
+#contentbox
+{
+width:450px; height:50px;
+border:solid 2px #006699;
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+}
+
+#character-count {
+margin-right:740px;
+}
+

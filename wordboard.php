@@ -1,11 +1,6 @@
 <?
-
+include "config.php"; 
 include "functions.php"; 
-
-$lan=$_GET['lang'];
-
-$configurazione['en'] = array("http://www.walks.to/isa/wordboardln.php?lang=it","Italiano");	
-$configurazione['it'] = array("http://www.walks.to/isa/wordboardln.php?lang=en","English");
 
 $parole['en'][] = array("I", "you", "we", "you", "them", "she", "him", "I", "my", "your", "our", "your", "his ");
 $parole['en'][] = array("yes", "no", "not", "I'm fine", "I", "have", "we", "is", "six", "you", "okay", "can");
@@ -53,42 +48,27 @@ $parole['it'][] = array("voglio compagnia", "non mi disturbate", "che piacere", 
 
 <div id="topcontainer">
 
-	<div id="jquery_jplayer"></div>
-
-	<div id="messagearea">
-		<a href="http://www.informaticisenzafrontiere.org/" title="Informatici Senza Frontiere"><img src="images/isf_isa_logo.png" /></a>
-	</div>
-	<a href="<? echo $configurazione[$lan][0]; ?>"><? echo $configurazione[$lan][1]; ?></a>
-
-	<form name="speechform" id="speechform" method="post" action="ajax_festival.php" class="sjbjl_form">
-		<input type="hidden" name="speech" id="speech" />
-		<input type="hidden" name="volume_scale" id="volume_scale" value="1"> 
-	</form>
-
 </div>
 
-<div id="bottomcontainer">
+<div id="maincontainer">
+
+<? include "./leftcolumn.php"; ?>
+
 	<div id="isa_words_content">
-	<? 	for ($i=0; $i<count($parole[$lan]); $i++) { ?>
+	<? 	for ($i=0; $i<count($parole[$language]); $i++) { ?>
 		<div class="isa_words_row">
-	<? 		for ($j=0; $j<count($parole[$lan][$i]); $j++) { ?>
-				<a class="track isa_word"><? echo $parole[$lan][$i][$j]; ?></a>
+	<? 		for ($j=0; $j<count($parole[$language][$i]); $j++) { ?>
+				<a class="track isa_word"><? echo $parole[$language][$i][$j]; ?></a>
 	<?		} ?>
 		</div>
 	<? } ?>
 	</div>
-</div>
-
-<a class="jp-play" href="#">Play</a>
-<a class="jp-pause" href="#">Pause</a>
-<a class="jp-stop" href="#">Stop</a>
-<a class="jp-mute" href="#">Mute</a>
-<a class="jp-unmute" href="#">Unmute</a>
-<a class="jp-volume-max" href="#">Max</a>
 
 </div>
 
-<iframe name="hiddenframe" width="1" height="1" id="hiddenframe" src="about_blank"></iframe>
+<? include "./jplayer.php"; ?>
+
+</div>
 
 </body>
 

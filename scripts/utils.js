@@ -1,3 +1,17 @@
+function xt9_load() {
+	thema_value = $('#writtentext').val();
+	thema_value_lastpos = thema_value.lastIndexOf(' ');
+	thema_value = thema_value.substring(thema_value_lastpos);
+
+	$('#xt9').load('./ajax_xt9.php?lang=' + language + '&thema=' + $.trim(thema_value));
+}
+
+function xt9_replace_word(text) {
+	thema_value = $('#writtentext').val();
+	thema_value_lastpos = thema_value.lastIndexOf(' ');
+	$('#writtentext').val(thema_value.substring(0,thema_value_lastpos) + " " + text + " ").focus();
+}
+
 function isa_write(char_to_write) {
 
 	switch (char_to_write) {
@@ -9,11 +23,17 @@ function isa_write(char_to_write) {
 		var previous_value = $('#writtentext').val();
 		previous_value = previous_value.substring(0,previous_value.length-1);
 		$('#writtentext').focus().val(previous_value);
+		xt9_load();
+		break;
+
+		case 'backspaceall':
+		$('#writtentext').val('');
 		break;
 
 		default:
 		var previous_value = $('#writtentext').val();
 		$('#writtentext').focus().val(previous_value + char_to_write);
+		xt9_load();
 		break;
 	}
 
@@ -44,6 +64,10 @@ function isa_resize() {
 		$('#container').width($(window).width());
 		$('#container').height(($(window).width()/3)*2);
 	}
+		$('#homemenu a img').height($(window).height()/3 - 40);
+		var margine = parseInt((screen_height - $('#homemenu').height())/2)-1;
+		$('#homemenu').css({'marginTop':margine + 'px'});
+	
 }
 
 $(document).ready(function() {
@@ -120,6 +144,10 @@ $(document).ready(function() {
 		$("#hiddenframe").attr("src","http://isf-walks.sinapto.net:9090/index.html?speech=" + encodeURIComponent($('#writtentext').val()));
 		setTimeout("$('#writtentext').val('').focus()",1000);
 		return false;
+	});
+	
+	$('#writtentext').bind('keypress',function() {
+		xt9_load();
 	});
 	
 });

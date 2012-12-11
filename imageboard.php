@@ -1,21 +1,16 @@
 <?
-
+include "config.php"; 
 include "functions.php"; 
-
-$lan=$_GET['lang'];
-
-$configurazione['en'] = array("http://www.walks.to/isa/imageboard.php?lang=it","Italiano");	
-$configurazione['it'] = array("http://www.walks.to/isa/imageboard.php?lang=en","English");
 
 $parole['en'][]  = array("windowopen", "food", "tv","yes","happy");
 $parole['en'][]  = array("windowclose", "water","music","no","sad");
-$parole['en'][] = array("kiss", "toilette", "light", "people");
-$parole['en'][] = array("heart", "sleep", "dark", "alone");
+$parole['en'][] = array("kiss", "toilette", "light", "people","hot");
+$parole['en'][] = array("heart", "sleep", "dark", "alone","cold");
 	
 $parole['it'][]  = array("finestraaperta", "cibo", "tv","si","felice");
 $parole['it'][]  = array("finestrachiusa", "acqua","musica","no","triste");
-$parole['it'][] = array("bacio", "bagno","luce","persone");
-$parole['it'][] = array("cuore", "sonno","buio","solo");
+$parole['it'][] = array("bacio", "bagno","luce","persone", "caldo");
+$parole['it'][] = array("cuore", "sonno","buio","solo", "freddo");
 
 ?>
 <!DOCTYPE html>
@@ -41,35 +36,17 @@ $parole['it'][] = array("cuore", "sonno","buio","solo");
 
 <div id="topcontainer">
 
-	<div id="jquery_jplayer"></div>
-
-	<div id="messagearea">
-		<a href="http://www.informaticisenzafrontiere.org/" title="Informatici Senza Frontiere"><img src="images/isf_isa_logo.png" /></a>
-		<a href="<? echo $configurazione[$lan][0]; ?>"><? echo $configurazione[$lan][1]; ?></a>
-	</div>
-
-	<form name="speechform" id="speechform" method="post" action="ajax_festival.php" class="sjbjl_form">
-		<input type="hidden" name="speech" id="speech" />
-		<input type="hidden" name="volume_scale" id="volume_scale" value="1"> 
-	</form>
-
 </div>
 
 <div id="maincontainer">
 
-	<div id="isa_leftcolumn">
-		<a class="inner_menu" href="index.php">home</a>
-		<a class="inner_menu" href="about:blank">-</a>
-		<a class="inner_menu" href="about:blank">-</a>
-		<a class="inner_menu" href="about:blank">-</a>
-		<a class="inner_menu" href="about:blank">-</a>
-	</div>
+<? include "./leftcolumn.php"; ?>
 
 	<div id="isa_images_content">
-	<? 	for ($i=0; $i<count($parole[$lan]); $i++) { ?>
-		<div class="isa_words_row">
-	<? 		for ($j=0; $j<count($parole[$lan][$i]); $j++) { ?>
-				<a class="track isa_word"><img src="images/board/<? echo $parole['it'][$i][$j]; ?>.jpg" title="<? echo $parole[$lan][$i][$j]; ?>" /></a>
+	<? 	for ($i=0; $i<count($parole[$language]); $i++) { ?>
+		<div class="isa_images_row">
+	<? 		for ($j=0; $j<count($parole[$language][$i]); $j++) { ?>
+				<a class="track isa_word"><img src="images/board/<? echo $parole['it'][$i][$j]; ?>.png" title="<? echo $parole[$language][$i][$j]; ?>" /></a>
 	<?		} ?>
 		</div>
 	<? } ?>
@@ -77,16 +54,9 @@ $parole['it'][] = array("cuore", "sonno","buio","solo");
 	
 </div>
 
-<a class="jp-play" href="#">Play</a>
-<a class="jp-pause" href="#">Pause</a>
-<a class="jp-stop" href="#">Stop</a>
-<a class="jp-mute" href="#">Mute</a>
-<a class="jp-unmute" href="#">Unmute</a>
-<a class="jp-volume-max" href="#">Max</a>
+<? include "./jplayer.php"; ?>
 
 </div>
-
-<iframe name="hiddenframe" width="1" height="1" id="hiddenframe" src="about_blank"></iframe>
 
 </body>
 

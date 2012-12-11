@@ -1,4 +1,7 @@
-<? include "functions.php"; ?>
+<?
+include "config.php"; 
+include "functions.php";
+?>
 <!DOCTYPE html>
 
 <html lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
@@ -11,6 +14,10 @@
 	<script type="text/javascript" src="scripts/jquery.jplayer.min.js"></script>
 	<script type="text/javascript" src="scripts/jquery.jplayer.inspector.js"></script>
 
+	<script type="text/javascript">
+		var language = "<? echo $language; ?>";
+	</script>
+	
 	<script type="text/javascript" src="scripts/utils.js"></script>
 	<link type="text/css" href="css/general.css" rel="stylesheet" />
 </head>
@@ -21,26 +28,16 @@
 
 <div id="topcontainer">
 
-	<div id="jquery_jplayer"></div>
-
 	<input type="text" name="writtentext" id="writtentext" />
-	<form name="speechform" id="speechform" method="post" action="ajax_festival.php" class="sjbjl_form">
-		<input type="hidden" name="speech" id="speech" />
-		<input type="hidden" name="volume_scale" id="volume_scale" value="1"> 
-	</form>
 
 </div>
 
 <div id="maincontainer">
 
-	<div id="isa_leftcolumn">
-		<a class="inner_menu" href="index.php">home</a>
-		<a class="inner_menu" href="about:blank">-</a>
-		<a class="inner_menu" href="about:blank">-</a>
-		<a class="inner_menu" href="about:blank">-</a>
-		<a class="inner_menu" href="about:blank">-</a>
-	</div>
+	<? include "leftcolumn.php"; ?>
 
+	<div id="xt9">&#160;</div>
+	
 	<div id="isa_keyboard">
 
 		<div class="isa_row">
@@ -93,31 +90,18 @@
 		</div>
 		<div class="isa_row">
 			<div class="isa_button_space" onclick="isa_write(' ');"><a>space</a></div>
-			<div class="isa_button_backspace" onclick="isa_write('backspace');"><a class="allcases"></a></div>
-			<div class="isa_button_enter" onclick="isa_write('enter');"><a>&#160;</a></div>
-			<div class="isa_button_tts"><a href="#" id="isa_tts_button" name="isa_tts_button">parla!</a></div>
+			<div class="isa_button_backspace" onclick="isa_write('backspace');"><a>&#160;</a></div>
+			<div class="isa_button_backspaceall" onclick="isa_write('backspaceall');"><a>&#160;</a></div>
+			<div class="isa_button_tts"><a href="#" id="isa_tts_button" name="isa_tts_button">&#160;</a></div>
 		</div>
 
 	</div>
 	
 </div>
 
-<a class="jp-play" href="#">Play</a>
-<a class="jp-pause" href="#">Pause</a>
-<a class="jp-stop" href="#">Stop</a>
-<a class="jp-mute" href="#">Mute</a>
-<a class="jp-unmute" href="#">Unmute</a>
-<a class="jp-volume-max" href="#">Max</a>
-
-<div id="messagearea">
-	<a href="http://www.informaticisenzafrontiere.org/" title="Informatici Senza Frontiere"><img src="images/isf_isa_logo.png" /></a>
-</div>
+<? include "./jplayer.php"; ?>
 
 </div>
-
-
-
-<iframe name="hiddenframe" width="1" height="1" id="hiddenframe" src="about_blank"></iframe>
 
 </body>
 
