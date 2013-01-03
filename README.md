@@ -1,4 +1,4 @@
 I.S.A. I Speak Again
 =========
 
-Voice Synthesis for reading news to blind people
+I.S.A. I Speak Again by Informatici Senza Frontiere, is a virtual keyboard for speech and mobility impaired people
