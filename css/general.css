@@ -97,8 +97,9 @@ div#xt9 {
 
 input.xt9_word {
 	float:left;
-	margin:0 0.1% 0.1% 0;
-	padding:0.3%;
+	width:16%;
+	margin:0 0.2% 0.2% 0;
+	padding:0.2%;
 	color:#000000;
 	font-size:120%;
 	font-weight:bold;
@@ -164,12 +165,13 @@ div.isa_row {
 	float:left;
 	width:100%;
 	height:20%;
-	margin:0 0 0.5% 0;
+	margin:0;
 }
 
 div.isa_button_half,
 div.isa_button_quarter,
 div.isa_button_backspace,
+div.isa_button_backspaceword,
 div.isa_button_backspaceall,
 div.isa_button_enter,
 div.isa_button_space,
@@ -177,10 +179,9 @@ div.isa_button_tts,
 div.isa_button_send {
 	float:left;
 	display:block;
-	height:95%;
-	margin:0 0.2% 0 0.2%;
+	height:100%;
+	margin:0;
 	border:1px solid #005a86;
-	border-radius:6px;
 	background-position:center center;
 }
 
@@ -189,22 +190,21 @@ div.isa_button_send {
 div.isa_button_full {
 	display:block;
 	float:left;
-	width:8.3%;
+	width:8.7%;
 	height:100%;
-	margin:0.1% 0.4% 0 0.4%;
+	margin:0;
 	background-color:#033046;
 	background-position:center center;
 	border:1px solid #005a86;
-	border-radius:6px;
 }
 
 div.isa_button_full a {
 	float:left;
 	width:100%;
 	height:100%;
-	font:normal 300% Arial,Helvetica,sans-serif;
+	font:normal 320% Arial,Helvetica,sans-serif;
 	text-align:center;
-	line-height:150%;
+	line-height:160%;
 	color:#bfe7f9;
 	cursor:url(../cursors/cur117.cur), progress !important;
 }
@@ -213,7 +213,7 @@ div.isa_button_full a {
 
 div.isa_button_half,
 div.isa_button_quarter {
-	width:6.8%;
+	width:7.4%;
 	background-color:#033046;
 }
 
@@ -222,6 +222,7 @@ div.isa_button_quarter 	{background-image:url(../images/isa_button_quarter.png);
 
 div.isa_button_enter,
 div.isa_button_backspace,
+div.isa_button_backspaceword,
 div.isa_button_backspaceall,
 div.isa_button_tts,
 div.isa_button_send {
@@ -237,6 +238,7 @@ div.isa_button_space {
 div.isa_button_half a,
 div.isa_button_quarter a,
 div.isa_button_backspace a,
+div.isa_button_backspaceword a,
 div.isa_button_backspaceall a,
 div.isa_button_enter a,
 div.isa_button_space a,
@@ -244,15 +246,16 @@ div.isa_button_tts a,
 div.isa_button_send a {
 	float:left;
 	width:100%;
-	height:48%;
+	height:50%;
 	color:#bfe7f9;
 	font:normal 140% Arial,Helvetica,sans-serif;
 	text-align:center;
-	line-height:140%;
+	line-height:150%;
 	cursor:url(../cursors/cur117.cur), progress !important;
 }
 
 div.isa_button_backspace a,
+div.isa_button_backspaceword a,
 div.isa_button_backspaceall a,
 div.isa_button_enter a,
 div.isa_button_tts a,
@@ -264,10 +267,11 @@ div.isa_button_space a {
 	background-position:center center;
 }
 
-div.isa_button_backspace a 	{background-image:url(../images/isa_backspace.png);}
-div.isa_button_backspaceall a 	{background-image:url(../images/isa_backspaceall.png);}
-div.isa_button_enter a 		{background-image:url(../images/isa_enter.png);}
-div.isa_button_tts a 			{background-image:url(../images/isa_tts.png);}
+div.isa_button_backspace a 		{background-image:url(../images/isa_backspace.png);}
+div.isa_button_backspaceword a 	{background-image:url(../images/isa_backspaceword.png);}
+div.isa_button_backspaceall a		{background-image:url(../images/isa_backspaceall.png);}
+div.isa_button_enter a 			{background-image:url(../images/isa_enter.png);}
+div.isa_button_tts a 				{background-image:url(../images/isa_tts.png);}
 
 div.isa_button_quarter a.uppercaseleft,
 div.isa_button_quarter a.uppercaseright,
@@ -281,6 +285,7 @@ div.isa_button_full a:hover,
 div.isa_button_half a:hover,
 div.isa_button_quarter a:hover,
 div.isa_button_backspace a:hover,
+div.isa_button_backspaceword a:hover,
 div.isa_button_backspaceall a:hover,
 div.isa_button_enter a:hover,
 div.isa_button_space a:hover,
@@ -291,13 +296,13 @@ div.isa_images_row a.isa_word:hover {
 	color:#002c38;
 	background-color:#00cdee;
 	font-weight:bold;
-	border-radius:5px;
 }
 
 div.isa_button_full a:active,
 div.isa_button_half a:active,
 div.isa_button_quarter a:active,
 div.isa_button_backspace a:active,
+div.isa_button_backspaceword a:active,
 div.isa_button_backspaceall a:active,
 div.isa_button_enter a:active,
 div.isa_button_space a:active,
@@ -308,7 +313,6 @@ div.isa_images_row a.isa_word:active {
 	color:#ffffff;
 	background-color:#FF6215;
 	font-weight:bold;
-	border-radius:5px;
 }
 
 div.isa_spacer_1 {float:left; width:4%; height:100%;}

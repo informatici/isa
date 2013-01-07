@@ -103,7 +103,6 @@ include "functions.php";
 				<a class="lowercaseleft" onclick="isa_write(this.innerHTML);">à</a>
 				<a class="lowercaseright" onclick="isa_write(this.innerHTML);">#</a>
 			</div>
-			<div class="isa_button_backspace" onclick="isa_write('backspace');"><a>&#160;</a></div>
 		</div>
 		<div class="isa_row">
 			<div class="isa_spacer_3">&nbsp;</div>
@@ -122,6 +121,8 @@ include "functions.php";
 		<div class="isa_row">
 			<div class="isa_spacer_4">&nbsp;</div>
 			<div class="isa_button_space" onclick="isa_write(' ');"><a>space</a></div>
+			<div class="isa_button_backspace" onclick="isa_write('backspace');"><a>&#160;</a></div>
+			<div class="isa_button_backspaceword" onclick="isa_write('backspaceword');"><a>&#160;</a></div>
 			<div class="isa_button_backspaceall" onclick="isa_write('backspaceall');"><a>&#160;</a></div>
 			<div class="isa_button_tts"><a href="#" id="isa_tts_button" name="isa_tts_button">&#160;</a></div>
 		</div>

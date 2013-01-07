@@ -51,6 +51,7 @@ include "functions.php";
 			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">8</a></div>
 			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">9</a></div>
 			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">0</a></div>
+			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">!</a></div>
 		</div>
 		<div class="isa_row">
 			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">Q</a></div>
@@ -63,6 +64,7 @@ include "functions.php";
 			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">I</a></div>
 			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">O</a></div>
 			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">P</a></div>
+			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">?</a></div>
 		</div>
 		<div class="isa_row">
 			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">A</a></div>
@@ -75,6 +77,7 @@ include "functions.php";
 			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">K</a></div>
 			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">L</a></div>
 			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">M</a></div>
+			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">@</a></div>
 		</div>
 		<div class="isa_row">
 			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">Z</a></div>
@@ -83,14 +86,16 @@ include "functions.php";
 			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">V</a></div>
 			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">B</a></div>
 			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">N</a></div>
+			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">;</a></div>
 			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">,</a></div>
 			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">.</a></div>
-			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">!</a></div>
-			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">?</a></div>
+			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">:</a></div>
+			<div class="isa_button_full"><a onclick="isa_write(this.innerHTML);">/</a></div>
 		</div>
 		<div class="isa_row">
 			<div class="isa_button_space" onclick="isa_write(' ');"><a>space</a></div>
 			<div class="isa_button_backspace" onclick="isa_write('backspace');"><a>&#160;</a></div>
+			<div class="isa_button_backspaceword" onclick="isa_write('backspaceword');"><a>&#160;</a></div>
 			<div class="isa_button_backspaceall" onclick="isa_write('backspaceall');"><a>&#160;</a></div>
 			<div class="isa_button_tts"><a href="#" id="isa_tts_button" name="isa_tts_button">&#160;</a></div>
 		</div>

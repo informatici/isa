@@ -1,0 +1,2 @@
+- Nuovo tasto options
+- Menu 2 livello con: twitter, facebook, web

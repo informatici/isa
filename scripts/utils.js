@@ -3,13 +3,17 @@ function xt9_load() {
 	thema_value_lastpos = thema_value.lastIndexOf(' ');
 	thema_value = thema_value.substring(thema_value_lastpos);
 
-	$('#xt9').load('./ajax_xt9.php?lang=' + language + '&thema=' + $.trim(thema_value));
+	$('#xt9').load('./ajax_api.php?lang=' + language + '&function=xt9_query&param1=' + $.trim(thema_value));
 }
 
 function xt9_replace_word(text) {
 	thema_value = $('#writtentext').val();
 	thema_value_lastpos = thema_value.lastIndexOf(' ');
 	$('#writtentext').val(thema_value.substring(0,thema_value_lastpos) + " " + text + " ").focus();
+	$.ajax({
+		url: './ajax_api.php?lang=' + language + '&function=xt9_hits&param1=' + $.trim(text),
+		context: document.body
+		});
 }
 
 function isa_write(char_to_write) {
@@ -26,8 +30,14 @@ function isa_write(char_to_write) {
 		xt9_load();
 		break;
 
+		case 'backspaceword':
+		thema_value = $.trim($('#writtentext').val());
+		thema_value_lastpos = thema_value.lastIndexOf(' ');
+		$('#writtentext').val(thema_value.substring(0,thema_value_lastpos)).focus();
+		break;
+		
 		case 'backspaceall':
-		$('#writtentext').val('');
+		$('#writtentext').val('').focus();
 		break;
 
 		default:
