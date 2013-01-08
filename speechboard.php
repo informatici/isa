@@ -7,7 +7,7 @@ include "functions.php";
 <html lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<title>.:: I Speak Again by ISF ::.</title>
+	<title>.: ISA I Speak Again :.</title>
 	<meta charset="utf-8">
 	
 	<script type="text/javascript" src="scripts/jquery.min.js"></script>
@@ -23,6 +23,8 @@ include "functions.php";
 </head>
 
 <body>
+
+<div id="isa_recognition">thisisisaispeakagainbyisfdonotremove</div>
 
 <div id="container">
 
@@ -117,6 +119,7 @@ include "functions.php";
 			<div class="isa_button_half"><a onclick="isa_write(this.innerHTML);">;</a><a class="lowercase" onclick="isa_write(this.innerHTML);">,</a></div>
 			<div class="isa_button_half"><a onclick="isa_write(this.innerHTML);">:</a><a class="lowercase" onclick="isa_write(this.innerHTML);">.</a></div>
 			<div class="isa_button_half"><a onclick="isa_write(this.innerHTML);">_</a><a class="lowercase" onclick="isa_write(this.innerHTML);">-</a></div>
+			<div class="isa_button_browse" onclick="isa_write('browse');"><a>&#160;</a></div>
 		</div>
 		<div class="isa_row">
 			<div class="isa_spacer_4">&nbsp;</div>
@@ -134,6 +137,8 @@ include "functions.php";
 <? include "./jplayer.php"; ?>
 
 </div>
+
+<iframe id="isa_browser" src="about:blank"></iframe>
 
 </body>
 

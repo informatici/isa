@@ -15,6 +15,11 @@ a {
 	color:#000000;
 }
 
+/* isa recognition */
+div#isa_recognition {
+	display:none;
+}
+
 /* inizio homepage */
 
 table#homemenu {
@@ -176,7 +181,8 @@ div.isa_button_backspaceall,
 div.isa_button_enter,
 div.isa_button_space,
 div.isa_button_tts,
-div.isa_button_send {
+div.isa_button_send,
+div.isa_button_browse {
 	float:left;
 	display:block;
 	height:100%;
@@ -225,7 +231,8 @@ div.isa_button_backspace,
 div.isa_button_backspaceword,
 div.isa_button_backspaceall,
 div.isa_button_tts,
-div.isa_button_send {
+div.isa_button_send,
+div.isa_button_browse {
 	width:9%;
 	background-color:#b5b5b5;
 }
@@ -243,7 +250,8 @@ div.isa_button_backspaceall a,
 div.isa_button_enter a,
 div.isa_button_space a,
 div.isa_button_tts a,
-div.isa_button_send a {
+div.isa_button_send a,
+div.isa_button_browse a {
 	float:left;
 	width:100%;
 	height:50%;
@@ -260,6 +268,7 @@ div.isa_button_backspaceall a,
 div.isa_button_enter a,
 div.isa_button_tts a,
 div.isa_button_send a,
+div.isa_button_browse a,
 div.isa_button_space a {
 	height:100%;
 	line-height:300%;
@@ -272,6 +281,7 @@ div.isa_button_backspaceword a 	{background-image:url(../images/isa_backspacewor
 div.isa_button_backspaceall a		{background-image:url(../images/isa_backspaceall.png);}
 div.isa_button_enter a 			{background-image:url(../images/isa_enter.png);}
 div.isa_button_tts a 				{background-image:url(../images/isa_tts.png);}
+div.isa_button_browse a 			{background-image:url(../images/isa_browse.png);}
 
 div.isa_button_quarter a.uppercaseleft,
 div.isa_button_quarter a.uppercaseright,
@@ -291,6 +301,7 @@ div.isa_button_enter a:hover,
 div.isa_button_space a:hover,
 div.isa_button_tts a:hover,
 div.isa_button_send a:hover,
+div.isa_button_browse a:hover,
 div.isa_words_row a.isa_word:hover,
 div.isa_images_row a.isa_word:hover {
 	color:#002c38;
@@ -308,6 +319,7 @@ div.isa_button_enter a:active,
 div.isa_button_space a:active,
 div.isa_button_tts a:active,
 div.isa_button_send a:active,
+div.isa_button_browse a:active,
 div.isa_words_row a.isa_word:active,
 div.isa_images_row a.isa_word:active {
 	color:#ffffff;
@@ -423,4 +435,10 @@ iframe#hiddenframe {
 	width:1px;
 	height:1px;
 	border:0 none;
+}
+
+iframe#isa_browser {
+	float:left;
+	display:none;
+	width:100%;
 }

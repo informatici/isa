@@ -17,7 +17,7 @@ function xt9_replace_word(text) {
 }
 
 function isa_write(char_to_write) {
-
+alert(char_to_write);
 	switch (char_to_write) {
 		case 'enter':
 		// speach
@@ -40,6 +40,12 @@ function isa_write(char_to_write) {
 		$('#isa_writtentext').val('').focus();
 		break;
 
+		case 'browse':
+		$('#isa_browser').attr('src',$('#isa_writtentext').val()).slideDown('slow');
+		$('#container').slideUp('slow');
+		alert("");
+		break;
+		
 		default:
 		var previous_value = $('#isa_writtentext').val();
 		$('#isa_writtentext').focus().val(previous_value + char_to_write);
@@ -74,10 +80,12 @@ function isa_resize() {
 		$('#container').width($(window).width());
 		$('#container').height(($(window).width()/3)*2);
 	}
-		$('#homemenu a img').height($(window).height()/3 - 40);
-		var margine = parseInt((screen_height - $('#homemenu').height())/2)-1;
-		$('#homemenu').css({'marginTop':margine + 'px'});
+
+	$('#homemenu a img').height($(window).height()/3 - 40);
+	var margine = parseInt((screen_height - $('#homemenu').height())/2)-1;
+	$('#homemenu').css({'marginTop':margine + 'px'});
 	
+	$('#isa_browser').height($(window).height());
 }
 
 $(document).ready(function() {
