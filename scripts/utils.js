@@ -1,5 +1,5 @@
 function xt9_load() {
-	thema_value = $('#writtentext').val();
+	thema_value = $('#isa_writtentext').val();
 	thema_value_lastpos = thema_value.lastIndexOf(' ');
 	thema_value = thema_value.substring(thema_value_lastpos);
 
@@ -7,9 +7,9 @@ function xt9_load() {
 }
 
 function xt9_replace_word(text) {
-	thema_value = $('#writtentext').val();
+	thema_value = $('#isa_writtentext').val();
 	thema_value_lastpos = thema_value.lastIndexOf(' ');
-	$('#writtentext').val(thema_value.substring(0,thema_value_lastpos) + " " + text + " ").focus();
+	$('#isa_writtentext').val(thema_value.substring(0,thema_value_lastpos) + " " + text + " ").focus();
 	$.ajax({
 		url: './ajax_api.php?lang=' + language + '&function=xt9_hits&param1=' + $.trim(text),
 		context: document.body
@@ -24,25 +24,25 @@ function isa_write(char_to_write) {
 		break;
 
 		case 'backspace':
-		var previous_value = $('#writtentext').val();
+		var previous_value = $('#isa_writtentext').val();
 		previous_value = previous_value.substring(0,previous_value.length-1);
-		$('#writtentext').focus().val(previous_value);
+		$('#isa_writtentext').focus().val(previous_value);
 		xt9_load();
 		break;
 
 		case 'backspaceword':
-		thema_value = $.trim($('#writtentext').val());
+		thema_value = $.trim($('#isa_writtentext').val());
 		thema_value_lastpos = thema_value.lastIndexOf(' ');
-		$('#writtentext').val(thema_value.substring(0,thema_value_lastpos)).focus();
+		$('#isa_writtentext').val(thema_value.substring(0,thema_value_lastpos)).focus();
 		break;
 		
 		case 'backspaceall':
-		$('#writtentext').val('').focus();
+		$('#isa_writtentext').val('').focus();
 		break;
 
 		default:
-		var previous_value = $('#writtentext').val();
-		$('#writtentext').focus().val(previous_value + char_to_write);
+		var previous_value = $('#isa_writtentext').val();
+		$('#isa_writtentext').focus().val(previous_value + char_to_write);
 		xt9_load();
 		break;
 	}
@@ -50,7 +50,7 @@ function isa_write(char_to_write) {
 }
 
 function isa_tts() {
-	$('#speech').val($('#writtentext').val());
+	$('#speech').val($('#isa_writtentext').val());
 	$.post('ajax_festival.php', $('#speechform').serialize(), function(msg) {
 		$('#isa_tts_button').attr("href","./audio/" + msg);
 	});
@@ -136,7 +136,7 @@ $(document).ready(function() {
 
 	$("#isa_tts_button").click(function(e) {
 	
-		var comodo = $('#writtentext').val();
+		var comodo = $('#isa_writtentext').val();
 		comodo = comodo.replace(/[^a-z0-9]/gi,'');
 
 		$('#speech').val(comodo);
@@ -144,19 +144,19 @@ $(document).ready(function() {
 			my_jPlayer.jPlayer("setMedia", {
 				mp3: "./audio/" + msg
 			}).jPlayer("play");
-			setTimeout("$('#writtentext').val('').focus()",1000);
+			setTimeout("$('#isa_writtentext').val('').focus()",1000);
 		});
 
 		return false;
 	});
 
 	$("#isa_button_send").click(function(e) {
-		$("#hiddenframe").attr("src","http://isf-walks.sinapto.net:9090/index.html?speech=" + encodeURIComponent($('#writtentext').val()));
-		setTimeout("$('#writtentext').val('').focus()",1000);
+		$("#hiddenframe").attr("src","http://isf-walks.sinapto.net:9090/index.html?speech=" + encodeURIComponent($('#isa_writtentext').val()));
+		setTimeout("$('#isa_writtentext').val('').focus()",1000);
 		return false;
 	});
 	
-	$('#writtentext').bind('keypress',function() {
+	$('#isa_writtentext').bind('keypress',function() {
 		xt9_load();
 	});
 	

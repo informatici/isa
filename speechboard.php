@@ -28,7 +28,7 @@ include "functions.php";
 
 <div id="topcontainer">
 
-	<input type="text" name="writtentext" id="writtentext" />
+	<input type="text" name="isa_writtentext" id="isa_writtentext" />
 
 </div>
 
