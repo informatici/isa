@@ -17,7 +17,7 @@ function xt9_replace_word(text) {
 }
 
 function isa_write(char_to_write) {
-alert(char_to_write);
+
 	switch (char_to_write) {
 		case 'enter':
 		// speach
@@ -43,7 +43,6 @@ alert(char_to_write);
 		case 'browse':
 		$('#isa_browser').attr('src',$('#isa_writtentext').val()).slideDown('slow');
 		$('#container').slideUp('slow');
-		alert("");
 		break;
 		
 		default:
