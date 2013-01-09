@@ -1,3 +1,23 @@
+/*
+	Copyright© 2012,2013 Informatici Senza Frontiere Onlus
+	http://www.informaticisenzafrontiere.org
+
+    This file is part of "ISA" I Speak Again - ISF project for impaired and blind people.
+
+    "ISA" I Speak Again is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    "ISA" I Speak Again is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with "ISA" I Speak Again.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 function xt9_load() {
 	thema_value = $('#isa_writtentext').val();
 	thema_value_lastpos = thema_value.lastIndexOf(' ');
@@ -6,14 +26,28 @@ function xt9_load() {
 	$('#xt9').load('./ajax_api.php?lang=' + language + '&function=xt9_query&param1=' + $.trim(thema_value));
 }
 
-function xt9_replace_word(text) {
+function delete_history(id) {
+ $.ajax({
+  url: './ajax_api.php?function=writtentext_history_delete&param1=' + $.trim(id),
+  context: document.body
+ });
+}
+
+function xt9_replace_word(text,spaced) {
 	thema_value = $('#isa_writtentext').val();
 	thema_value_lastpos = thema_value.lastIndexOf(' ');
-	$('#isa_writtentext').val(thema_value.substring(0,thema_value_lastpos) + " " + text + " ").focus();
+
+	var addspace = " ";
+	
+	if (!spaced) {
+		addspace = '';
+	}
+	
+	$('#isa_writtentext').val(thema_value.substring(0,thema_value_lastpos) + " " + text + addspace).focus();
 	$.ajax({
 		url: './ajax_api.php?lang=' + language + '&function=xt9_hits&param1=' + $.trim(text),
 		context: document.body
-		});
+	});
 }
 
 function isa_write(char_to_write) {
@@ -42,6 +76,7 @@ function isa_write(char_to_write) {
 
 		case 'browse':
 		$('#isa_browser').attr('src',$('#isa_writtentext').val()).slideDown('slow');
+		$('#back_to_isa').slideDown('slow');
 		$('#container').slideUp('slow');
 		break;
 		
@@ -51,20 +86,6 @@ function isa_write(char_to_write) {
 		xt9_load();
 		break;
 	}
-
-}
-
-function isa_tts() {
-	$('#speech').val($('#isa_writtentext').val());
-	$.post('ajax_festival.php', $('#speechform').serialize(), function(msg) {
-		$('#isa_tts_button').attr("href","./audio/" + msg);
-	});
-
-	my_jPlayer.jPlayer("setMedia", {
-		mp3: $('#isa_tts_button').attr("href")
-	});
-	my_jPlayer.jPlayer("play");
-	return false;
 
 }
 
@@ -84,7 +105,7 @@ function isa_resize() {
 	var margine = parseInt((screen_height - $('#homemenu').height())/2)-1;
 	$('#homemenu').css({'marginTop':margine + 'px'});
 	
-	$('#isa_browser').height($(window).height());
+	$('#isa_browser').height($(window).height()-50);
 }
 
 $(document).ready(function() {
@@ -141,6 +162,7 @@ $(document).ready(function() {
 		return false;
 	});
 
+	// create click handler for speak button
 	$("#isa_tts_button").click(function(e) {
 	
 		var comodo = $('#isa_writtentext').val();
@@ -151,7 +173,13 @@ $(document).ready(function() {
 			my_jPlayer.jPlayer("setMedia", {
 				mp3: "./audio/" + msg
 			}).jPlayer("play");
-			setTimeout("$('#isa_writtentext').val('').focus()",1000);
+			setTimeout("$('#isa_writtentext').focus()",1000);
+		});
+
+		// saves writtentext history
+		$.ajax({
+			url: './ajax_api.php?lang=' + language + '&function=writtentext_history_write&param1=' + $.trim($('#isa_writtentext').val()),
+			context: document.body
 		});
 
 		return false;
@@ -167,4 +195,11 @@ $(document).ready(function() {
 		xt9_load();
 	});
 	
+	// enable back to isa
+	$('#back_to_isa').bind('click',function() {
+		$('#isa_browser').attr('src','about:blank').slideUp('slow');
+		$('#back_to_isa').slideUp('slow');
+		$('#container').slideDown('slow');
+	});
+
 });
