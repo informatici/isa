@@ -1,4 +1,24 @@
 <?
+/*
+	Copyright© 2012,2013 Informatici Senza Frontiere Onlus
+	http://www.informaticisenzafrontiere.org
+
+    This file is part of "ISA" I Speak Again - ISF project for impaired and blind people.
+
+    "ISA" I Speak Again is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    "ISA" I Speak Again is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with "ISA" I Speak Again.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 include "config.php"; 
 include "functions.php";
 ?>
@@ -100,8 +120,6 @@ include "functions.php";
 			<div class="isa_button_backspaceword" onclick="isa_write('backspaceword');"><a>&#160;</a></div>
 			<div class="isa_button_backspaceall" onclick="isa_write('backspaceall');"><a>&#160;</a></div>
 			<div class="isa_button_tts"><a href="#" id="isa_tts_button" name="isa_tts_button">&#160;</a></div>
-		</div>
-		<div class="isa_row">
 			<div class="isa_button_browse" onclick="isa_write('browse');"><a>&#160;</a></div>
 		</div>
 
@@ -113,6 +131,7 @@ include "functions.php";
 
 </div>
 
+<div id="back_to_isa">&lt; back to ISA I Speak Again</div>
 <iframe id="isa_browser" src="about:blank"></iframe>
 
 </body>
