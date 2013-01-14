@@ -472,3 +472,28 @@ iframe#isa_browser {
 	width:100%;
 	overflow:auto;
 }
+
+.loader {
+	background-image:url(../images/ajax-loader.gif);
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+/* help software */
+div#software a {
+	float:left;
+	display:block;
+	width:88%;
+	margin:1% 0 0 0;
+	background-color:#033046;
+	border:1px solid #005a86;
+	font-size:150%;
+	color:#bfe7f9;
+}
+
+div#software a span {
+	display:block;
+	float:left;
+	width:100%;
+	margin:1.5%;
+}
