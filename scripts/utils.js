@@ -75,7 +75,7 @@ function isa_write(char_to_write) {
 		break;
 
 		case 'browse':
-		$('#isa_browser').attr('src',$('#isa_writtentext').val()).slideDown('slow');
+		$('#isa_browser').addClass('loader').attr('src',$('#isa_writtentext').val()).slideDown('slow');
 		$('#back_to_isa').slideDown('slow');
 		$('#container').slideUp('slow');
 		break;
@@ -197,7 +197,7 @@ $(document).ready(function() {
 	
 	// enable back to isa
 	$('#back_to_isa').bind('click',function() {
-		$('#isa_browser').attr('src','about:blank').slideUp('slow');
+		$('#isa_browser').removeClass('loader').attr('src','about:blank').slideUp('slow');
 		$('#back_to_isa').slideUp('slow');
 		$('#container').slideDown('slow');
 	});

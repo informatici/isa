@@ -472,3 +472,38 @@ iframe#isa_browser {
 	width:100%;
 	overflow:auto;
 }
+
+.loader {
+	background-image:url(../images/ajax-loader.gif);
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+/* help software */
+div#software a {
+	float:left;
+	display:block;
+	width:88%;
+	margin:1% 0 0 0;
+	background-color:#033046;
+	border:1px solid #005a86;
+	font-size:64%;
+	color:#bfe7f9;
+	background-repeat:no-repeat;
+	background-position:left center;
+}
+
+div#software a img {
+	float:left;
+	display:block;
+	width:26%;
+	height:auto;
+}
+
+div#software a span {
+	display:block;
+	float:left;
+	width:73%;
+	text-align:left;
+	margin:0.3% auto auto 0.3%;
+}

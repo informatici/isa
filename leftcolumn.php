@@ -37,4 +37,5 @@ if ($language == 'it') {
 	<a href="speechboard.php?lang=<? echo $language; ?>"><img src="./images/home/menu_speechboard.png" /></a>
 	<a href="wordboard.php?lang=<? echo $language; ?>"><img src="./images/home/menu_wordboard.png" /></a>
 	<a href="imageboard.php?lang=<? echo $language; ?>"><img src="./images/home/menu_imageboard.png" /></a>
+	<a href="software.php?lang=<? echo $language; ?>"><img src="./images/home/menu_software.png" /></a>
 </div>
