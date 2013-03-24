@@ -45,6 +45,21 @@ $parole['it'][] = array("cuore", "sonno","buio","solo", "freddo");
 	<script type="text/javascript" src="scripts/jquery.jplayer.min.js"></script>
 	<script type="text/javascript" src="scripts/jquery.jplayer.inspector.js"></script>
 
+	<script type="text/javascript">
+	
+	var ttse = 'festival';
+	
+	<?
+	$ttse = 'festival';
+
+	if (isset($_GET['ttse']) && ($_GET['ttse'] == 'ivona')) {
+		$ttse = 'ivona';
+		echo "ttse = 'ivona';";
+	}
+	?>
+
+	</script>
+
 	<script type="text/javascript" src="scripts/utils.js"></script>
 	<link type="text/css" href="css/general.css" rel="stylesheet" />
 	
