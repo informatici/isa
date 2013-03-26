@@ -139,12 +139,7 @@ $(document).ready(function() {
 	// Create click handlers for the different tracks
 	$("#isa_words_content .track").click(function(e) {
 		$('#speech').val($(this).html());
-		$.post('ajax_festival.php', $('#speechform').serialize(), function(msg) {
-			my_jPlayer.jPlayer("setMedia", {
-				mp3: "./audio/" + msg
-			}).jPlayer("play");
-		});
-
+		isa_tts(my_jPlayer);
 		$(this).blur();
 		return false;
 	});
@@ -152,12 +147,7 @@ $(document).ready(function() {
 	// Create click handlers for the different tracks
 	$("#isa_images_content .track img").click(function(e) {
 		$('#speech').val($(this).attr('title'));
-		$.post('ajax_festival.php', $('#speechform').serialize(), function(msg) {
-			my_jPlayer.jPlayer("setMedia", {
-				mp3: "./audio/" + msg
-			}).jPlayer("play");
-		});
-
+		isa_tts(my_jPlayer);
 		$(this).blur();
 		return false;
 	});
@@ -169,12 +159,8 @@ $(document).ready(function() {
 		comodo = comodo.replace(/[^a-z0-9]/gi,'');
 
 		$('#speech').val(comodo);
-		$.post('ajax_festival.php', $('#speechform').serialize(), function(msg) {
-			my_jPlayer.jPlayer("setMedia", {
-				mp3: "./audio/" + msg
-			}).jPlayer("play");
-			setTimeout("$('#isa_writtentext').focus()",1000);
-		});
+		isa_tts(my_jPlayer);
+		setTimeout("$('#isa_writtentext').focus()",1000);
 
 		// saves writtentext history
 		$.ajax({
@@ -203,3 +189,28 @@ $(document).ready(function() {
 	});
 
 });
+
+function isa_tts(my_jPlayer) {
+	
+	switch (ttse) {
+	
+		default:
+		case 'festival':
+		$.post('ajax_festival.php', $('#speechform').serialize(), function(msg) {
+			my_jPlayer.jPlayer("setMedia", {
+				mp3: "./audio/" + msg
+			}).jPlayer("play");
+		});
+		break;
+		
+		case 'ivona':
+		$.post('ajax_ivona.php', $('#speechform').serialize(), function(msg) {
+			my_jPlayer.jPlayer("setMedia", {
+				mp3: msg
+			}).jPlayer("play");
+		});
+		break;
+	}
+	
+	return false;
+}

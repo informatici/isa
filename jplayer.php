@@ -22,7 +22,7 @@
 
 <div id="jquery_jplayer"></div>
 
-<form name="speechform" id="speechform" method="post" action="./ajax_festival.php" class="sjbjl_form">
+<form name="speechform" id="speechform" method="post" action="ajax_<? echo $ttse; ?>.php" class="sjbjl_form">
 	<input type="hidden" name="speech" id="speech" />
 	<input type="hidden" name="volume_scale" id="volume_scale" value="1"> 
 	<input type="hidden" name="language" id="language" value="<? echo $language; ?>" />

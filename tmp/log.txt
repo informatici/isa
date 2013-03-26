@@ -1,0 +1,352 @@
+
+[Trace] POST Text: finestraaperta
+[Trace] Text: finestraaperta
+[Trace] Ivona: NAqB9mYjqG Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=NAqB9mYjqG&ssi=2728&lang=en&e=1
+[Trace] POST Text: Livio! Dove ti sei cacciato?
+[Trace] Text: Livio! Dove ti sei cacciato?
+[Trace] Ivona: eDxEMhspgH Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=eDxEMhspgH&ssi=2728&lang=en&e=1
+[Trace] POST Text: CASA
+[Trace] Text: CASA
+[Trace] Ivona: DgqgrTIzDk Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=DgqgrTIzDk&ssi=2728&lang=en&e=1
+[Trace] POST Text: CASA
+[Trace] Text: CASA
+[Trace] Ivona: DgqgrTIzDk Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=DgqgrTIzDk&ssi=2728&lang=en&e=1
+[Trace] POST Text: CASA
+[Trace] Text: CASA
+[Trace] Ivona: DgqgrTIzDk Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=DgqgrTIzDk&ssi=2728&lang=en&e=1
+[Trace] POST Text: CASA
+[Trace] Text: CASA
+[Trace] Ivona: DgqgrTIzDk Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=DgqgrTIzDk&ssi=2728&lang=en&e=1
+[Trace] POST Text:  Casacanditella 
+[Trace] Text:  Casacanditella 
+[Trace] Ivona: 6hDrBbI1dj Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=6hDrBbI1dj&ssi=2728&lang=en&e=1
+[Trace] POST Text:  Casacanditella 
+[Trace] Text:  Casacanditella 
+[Trace] Ivona: 6hDrBbI1dj Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=6hDrBbI1dj&ssi=2728&lang=en&e=1
+[Trace] POST Text:  Casacanditella casacca 
+[Trace] Text:  Casacanditella casacca 
+[Trace] Ivona: NIVf1g8Iz4 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=NIVf1g8Iz4&ssi=2728&lang=en&e=1
+[Trace] POST Text: (YU)
+[Trace] Text: (YU)
+[Trace] Ivona: umESykoQy4 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=umESykoQy4&ssi=2728&lang=en&e=1
+[Trace] POST Text: (YU)
+[Trace] Text: (YU)
+[Trace] Ivona: umESykoQy4 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=umESykoQy4&ssi=2728&lang=en&e=1
+[Trace] POST Text: YTUI
+[Trace] Text: YTUI
+[Trace] Ivona: 6XkvlnXJv2 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=6XkvlnXJv2&ssi=2728&lang=en&e=1
+[Trace] POST Text: dimmi una frase senza musica per favore
+[Trace] Text: dimmi una frase senza musica per favore
+[Trace] Ivona: bZjQle3sgF Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=bZjQle3sgF&ssi=2728&lang=en&e=1
+[Trace] POST Text: Ma insomma, dimmela sta frase senza quella cavolo di musica
+[Trace] Text: Ma insomma, dimmela sta frase senza quella cavolo di musica
+[Trace] Ivona: q0DuA0EBnY Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=q0DuA0EBnY&ssi=2728&lang=en&e=1
+[Trace] POST Text: YUI
+[Trace] Text: YUI
+[Trace] Ivona: MhPw7sjbPZ Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=MhPw7sjbPZ&ssi=2728&lang=en&e=1
+[Trace] POST Text: YUIRE
+[Trace] Text: YUIRE
+[Trace] Ivona: PYsD4MOj4I Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=PYsD4MOj4I&ssi=2728&lang=en&e=1
+[Trace] POST Text: YUIRETR
+[Trace] Text: YUIRETR
+[Trace] Ivona: t9XjAaHyw4 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=t9XjAaHyw4&ssi=2728&lang=en&e=1
+[Trace] POST Text: YUIRETRI
+[Trace] Text: YUIRETRI
+[Trace] Ivona: Hs6tPGOcge Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=Hs6tPGOcge&ssi=2728&lang=en&e=1
+[Trace] POST Text:  n'astraemmo 
+[Trace] Text:  n'astraemmo 
+[Trace] Ivona: uGiSoNeO0B Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=uGiSoNeO0B&ssi=2728&lang=en&e=1
+[Trace] POST Text: RETTO
+[Trace] Text: RETTO
+[Trace] Ivona: H44P0mDjBq Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=H44P0mDjBq&ssi=2728&lang=en&e=1
+[Trace] POST Text: me lo ha raccontato a voce, non ho visto niente
+[Trace] Text: me lo ha raccontato a voce, non ho visto niente
+[Trace] Ivona: D9Iet5Iu3y Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=D9Iet5Iu3y&ssi=2728&lang=en&e=1
+[Trace] POST Text: me lo ha raccontato a voce, non ho visto niente
+[Trace] Text: me lo ha raccontato a voce, non ho visto niente
+[Trace] Ivona: D9Iet5Iu3y Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=D9Iet5Iu3y&ssi=2728&lang=en&e=1
+[Trace] POST Text: finestraaperta
+[Trace] Text: finestraaperta
+[Trace] Ivona: NAqB9mYjqG Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=NAqB9mYjqG&ssi=2728&lang=en&e=1
+[Trace] POST Text: cibo
+[Trace] Text: cibo
+[Trace] Ivona: vmYuBrlQdv Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=vmYuBrlQdv&ssi=2728&lang=en&e=1
+[Trace] POST Text: tv
+[Trace] Text: tv
+[Trace] Ivona: 6ePEZ4kZT7 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=6ePEZ4kZT7&ssi=2728&lang=en&e=1
+[Trace] POST Text: felice
+[Trace] Text: felice
+[Trace] Ivona: SS0Oca1RCN Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=SS0Oca1RCN&ssi=2728&lang=en&e=1
+[Trace] POST Text: felice
+[Trace] Text: felice
+[Trace] Ivona: SS0Oca1RCN Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=SS0Oca1RCN&ssi=2728&lang=en&e=1
+[Trace] POST Text: parte la musichetta e poi felice
+[Trace] Text: parte la musichetta e poi felice
+[Trace] Ivona: OF1H2AEn8v Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=OF1H2AEn8v&ssi=2728&lang=en&e=1
+[Trace] POST Text: è memorizzato nel database
+[Trace] Text: è memorizzato nel database
+[Trace] Ivona: SaIcMEhKzX Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=SaIcMEhKzX&ssi=2728&lang=en&e=1
+[Trace] POST Text: arzigogolato pleonasmo 
+[Trace] Text: arzigogolato pleonasmo 
+[Trace] Ivona: wG2nDuxWla Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=wG2nDuxWla&ssi=2728&lang=en&e=1
+[Trace] POST Text: arzigogolato pleonasmo con una certa disinvoltura
+[Trace] Text: arzigogolato pleonasmo con una certa disinvoltura
+[Trace] Ivona: lZDG3axFqR Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=lZDG3axFqR&ssi=2728&lang=en&e=1
+[Trace] POST Text: come stai?
+[Trace] Text: come stai?
+[Trace] Ivona: CJHrVPTshM Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=CJHrVPTshM&ssi=2728&lang=en&e=1
+[Trace] POST Text: come stai?
+[Trace] Text: come stai?
+[Trace] Ivona: CJHrVPTshM Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=CJHrVPTshM&ssi=2728&lang=en&e=1
+[Trace] POST Text: ciao, come stai?
+[Trace] Text: ciao, come stai?
+[Trace] Ivona: Zt2lde98YZ Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=Zt2lde98YZ&ssi=2728&lang=en&e=1
+[Trace] POST Text: ciao, come stai!
+[Trace] Text: ciao, come stai!
+[Trace] Ivona: leQr5Go4y9 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=leQr5Go4y9&ssi=2728&lang=en&e=1
+[Trace] POST Text: che ore sono?
+[Trace] Text: che ore sono?
+[Trace] Ivona: CuXzy3Pb4g Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=CuXzy3Pb4g&ssi=2728&lang=en&e=1
+[Trace] POST Text: che ore sono ?
+[Trace] Text: che ore sono ?
+[Trace] Ivona: TvTZF0rDsn Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=TvTZF0rDsn&ssi=2728&lang=en&e=1
+[Trace] POST Text: che ore sono?^
+[Trace] Text: che ore sono?^
+[Trace] Ivona: LxGSPhFHYd Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=LxGSPhFHYd&ssi=2728&lang=en&e=1
+[Trace] POST Text: Ciao, che ore sono?^
+[Trace] Text: Ciao, che ore sono?^
+[Trace] Ivona: 6xxITDx8a3 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=6xxITDx8a3&ssi=2728&lang=en&e=1
+[Trace] POST Text: Viene sviluppata attraverso la collaborazione di volontari da ogni parte del mondo e fornisce più di un semplice sistema operativo: viene distribuito con oltre 29 000 pacchetti, programmi già compilati e impacchettati in modo tale da permettere installazioni facili
+[Trace] Text: Viene sviluppata attraverso la collaborazione di volontari da ogni parte del mondo e fornisce più di un semplice sistema operativo: viene distribuito con oltre 29 000 pacchetti, programmi già compilati e impacchettati in modo tale da permettere installazioni facili
+[Trace] Ivona: jm5RpcGWQF Price 300 -> http://www.ivona.com/online/fileSaas.php?fi=jm5RpcGWQF&ssi=2728&lang=en&e=1
+[Trace] POST Text: Viene sviluppata attraverso la collaborazione di volontari da ogni parte del mondo e fornisce più di un semplice sistema operativo: viene distribuito con oltre 29000 pacchetti, programmi già compilati e impacchettati in modo tale da permettere installazioni facili
+[Trace] Text: Viene sviluppata attraverso la collaborazione di volontari da ogni parte del mondo e fornisce più di un semplice sistema operativo: viene distribuito con oltre 29000 pacchetti, programmi già compilati e impacchettati in modo tale da permettere installazioni facili
+[Trace] Ivona: XzDtCsC12e Price 300 -> http://www.ivona.com/online/fileSaas.php?fi=XzDtCsC12e&ssi=2728&lang=en&e=1
+[Trace] POST Text: fasc cald
+[Trace] Text: fasc cald
+[Trace] Ivona: B1TQo24rvu Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=B1TQo24rvu&ssi=2728&lang=en&e=1
+[Trace] POST Text: fasch cald
+[Trace] Text: fasch cald
+[Trace] Ivona: wz7KC5O1fc Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=wz7KC5O1fc&ssi=2728&lang=en&e=1
+[Trace] POST Text: ue u scem
+[Trace] Text: ue u scem
+[Trace] Ivona: cbUc18rOYL Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=cbUc18rOYL&ssi=2728&lang=en&e=1
+[Trace] POST Text: Eccoli qui gli ingredienti “magici” della formula con cui Big G intende andare all'attacco dell'arcinemica Microsoft.
+[Trace] Text: Eccoli qui gli ingredienti “magici” della formula con cui Big G intende andare all'attacco dell'arcinemica Microsoft.
+[Trace] Ivona: Ym0HMfEndT Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=Ym0HMfEndT&ssi=2728&lang=en&e=1
+[Trace] POST Text: si tira
+[Trace] Text: si tira
+[Trace] Ivona: qBCRPi6fHY Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=qBCRPi6fHY&ssi=2728&lang=en&e=1
+[Trace] POST Text: come e' andato il viaggio
+[Trace] Text: come e' andato il viaggio
+[Trace] Ivona: N36voRzlAG Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=N36voRzlAG&ssi=2728&lang=en&e=1
+[Trace] POST Text: ciao a tutti
+[Trace] Text: ciao a tutti
+[Trace] Ivona: FFx1T8kwxe Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=FFx1T8kwxe&ssi=2728&lang=en&e=1
+[Trace] POST Text:  reacquaint 
+[Trace] Text:  reacquaint 
+[Trace] Ivona: 7zHUgkXo1k Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=7zHUgkXo1k&ssi=2728&lang=en&e=1
+[Trace] POST Text: CIAO MARGHERITA
+[Trace] Text: CIAO MARGHERITA
+[Trace] Ivona: H2CMSZORgm Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=H2CMSZORgm&ssi=2728&lang=en&e=1
+[Trace] POST Text: CIAO MARGHERITA E LUDOVICA
+[Trace] Text: CIAO MARGHERITA E LUDOVICA
+[Trace] Ivona: eKzK4CjMzh Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=eKzK4CjMzh&ssi=2728&lang=en&e=1
+[Trace] POST Text: ISOTTA TUTTA TONDA
+[Trace] Text: ISOTTA TUTTA TONDA
+[Trace] Ivona: 9Tdzx2yRjE Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=9Tdzx2yRjE&ssi=2728&lang=en&e=1
+[Trace] POST Text: OGGI è  UNA giornata TUTTA BIANCA
+[Trace] Text: OGGI è  UNA giornata TUTTA BIANCA
+[Trace] Ivona: 5hNAziUDH7 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=5hNAziUDH7&ssi=2728&lang=en&e=1
+[Trace] POST Text: ciao Barbara, ti voglio bene. Non puoi immpaginare quanto
+[Trace] Text: ciao Barbara, ti voglio bene. Non puoi immpaginare quanto
+[Trace] Ivona: nvtGtDvsQR Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=nvtGtDvsQR&ssi=2728&lang=en&e=1
+[Trace] POST Text: ciao Barbara, ti voglio bene. Non puoi immaginare quanto
+[Trace] Text: ciao Barbara, ti voglio bene. Non puoi immaginare quanto
+[Trace] Ivona: msT9fbOyJO Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=msT9fbOyJO&ssi=2728&lang=en&e=1
+[Trace] POST Text: ciao come stai?
+[Trace] Text: ciao come stai?
+[Trace] Ivona: CQgG51XbQh Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=CQgG51XbQh&ssi=2728&lang=en&e=1
+[Trace] POST Text: che splendida sensazione averti qui.
+[Trace] Text: che splendida sensazione averti qui.
+[Trace] Ivona: pLNTwtI9Rn Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=pLNTwtI9Rn&ssi=2728&lang=en&e=1
+[Trace] POST Text: ERTO
+[Trace] Text: ERTO
+[Trace] Ivona: EqF9UYFA1v Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=EqF9UYFA1v&ssi=2728&lang=en&e=1
+[Trace] POST Text: ERTO
+[Trace] Text: ERTO
+[Trace] Ivona: EqF9UYFA1v Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=EqF9UYFA1v&ssi=2728&lang=en&e=1
+[Trace] POST Text: ERTO
+[Trace] Text: ERTO
+[Trace] Ivona: EqF9UYFA1v Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=EqF9UYFA1v&ssi=2728&lang=en&e=1
+[Trace] POST Text: QWERY
+[Trace] Text: QWERY
+[Trace] Ivona: lhaRvI0UEo Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=lhaRvI0UEo&ssi=2728&lang=en&e=1
+[Trace] POST Text: TEAM
+[Trace] Text: TEAM
+[Trace] Ivona: 8mFzqrhx9Z Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=8mFzqrhx9Z&ssi=2728&lang=en&e=1
+[Trace] POST Text:  team 
+[Trace] Text:  team 
+[Trace] Ivona: qDOg7jXtH2 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=qDOg7jXtH2&ssi=2728&lang=en&e=1
+[Trace] POST Text: sono deluso
+[Trace] Text: sono deluso
+[Trace] Ivona: TsC9KMHjD9 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=TsC9KMHjD9&ssi=2728&lang=en&e=1
+[Trace] POST Text: bere
+[Trace] Text: bere
+[Trace] Ivona: 9PdFhY28zU Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=9PdFhY28zU&ssi=2728&lang=en&e=1
+[Trace] POST Text: bagno
+[Trace] Text: bagno
+[Trace] Ivona: 8fC9S9TcAJ Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=8fC9S9TcAJ&ssi=2728&lang=en&e=1
+[Trace] POST Text: finestrachiusa
+[Trace] Text: finestrachiusa
+[Trace] Ivona: dV5JNLPT9q Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=dV5JNLPT9q&ssi=2728&lang=en&e=1
+[Trace] POST Text: bibita fresca
+[Trace] Text: bibita fresca
+[Trace] Ivona: sRsWO684HT Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=sRsWO684HT&ssi=2728&lang=en&e=1
+[Trace] POST Text: sono arrabbiato
+[Trace] Text: sono arrabbiato
+[Trace] Ivona: 69PsaDPW1T Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=69PsaDPW1T&ssi=2728&lang=en&e=1
+[Trace] POST Text: zii
+[Trace] Text: zii
+[Trace] Ivona: Xh0HZsn6FN Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=Xh0HZsn6FN&ssi=2728&lang=en&e=1
+[Trace] POST Text: meno luce
+[Trace] Text: meno luce
+[Trace] Ivona: fZiKusY8BK Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=fZiKusY8BK&ssi=2728&lang=en&e=1
+[Trace] POST Text: voglio compagnia
+[Trace] Text: voglio compagnia
+[Trace] Ivona: 9ELq2x6DMq Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=9ELq2x6DMq&ssi=2728&lang=en&e=1
+[Trace] POST Text: voglio compagnia
+[Trace] Text: voglio compagnia
+[Trace] Ivona: 9ELq2x6DMq Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=9ELq2x6DMq&ssi=2728&lang=en&e=1
+[Trace] POST Text: non mi disturbate
+[Trace] Text: non mi disturbate
+[Trace] Ivona: osfEjbTcKV Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=osfEjbTcKV&ssi=2728&lang=en&e=1
+[Trace] POST Text: want
+[Trace] Text: want
+[Trace] Ivona: sakzRIZwZ5 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=sakzRIZwZ5&ssi=2728&lang=en&e=1
+[Trace] POST Text: fresh
+[Trace] Text: fresh
+[Trace] Ivona: ex8QV0fr2B Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=ex8QV0fr2B&ssi=2728&lang=en&e=1
+[Trace] POST Text: I'm disappointed
+[Trace] Text: I'm disappointed
+[Trace] Ivona: HBqdL9nxPa Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=HBqdL9nxPa&ssi=2728&lang=en&e=1
+[Trace] POST Text: che piacere
+[Trace] Text: che piacere
+[Trace] Ivona: SGvjxllV83 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=SGvjxllV83&ssi=2728&lang=en&e=1
+[Trace] POST Text: ti voglio bene
+[Trace] Text: ti voglio bene
+[Trace] Ivona: EwriJ60X8j Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=EwriJ60X8j&ssi=2728&lang=en&e=1
+[Trace] POST Text: grazie
+[Trace] Text: grazie
+[Trace] Ivona: ylRiOjUDhE Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=ylRiOjUDhE&ssi=2728&lang=en&e=1
+[Trace] POST Text: nonni
+[Trace] Text: nonni
+[Trace] Ivona: z8rFva5c6M Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=z8rFva5c6M&ssi=2728&lang=en&e=1
+[Trace] POST Text: si tira
+[Trace] Text: si tira
+[Trace] Ivona: qBCRPi6fHY Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=qBCRPi6fHY&ssi=2728&lang=en&e=1
+[Trace] POST Text: cellulare
+[Trace] Text: cellulare
+[Trace] Ivona: pH4qxFKlk0 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=pH4qxFKlk0&ssi=2728&lang=en&e=1
+[Trace] POST Text:  adesso PROVO A SCRIVERE
+[Trace] Text:  adesso PROVO A SCRIVERE
+[Trace] Ivona: XypJEZFKD0 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=XypJEZFKD0&ssi=2728&lang=en&e=1
+[Trace] POST Text:  adesso PROVO A SCRIVERE
+[Trace] Text:  adesso PROVO A SCRIVERE
+[Trace] Ivona: XypJEZFKD0 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=XypJEZFKD0&ssi=2728&lang=en&e=1
+[Trace] POST Text:  adesso PROVO A scrivere scrivere scrivere 
+[Trace] Text:  adesso PROVO A scrivere scrivere scrivere 
+[Trace] Ivona: DCyPFODHmo Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=DCyPFODHmo&ssi=2728&lang=en&e=1
+[Trace] POST Text: QuEsTE sonO PROvE
+[Trace] Text: QuEsTE sonO PROvE
+[Trace] Ivona: 6ktxIVCykb Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=6ktxIVCykb&ssi=2728&lang=en&e=1
+[Trace] POST Text:  ciao 
+[Trace] Text:  ciao 
+[Trace] Ivona: U84uZd7zOr Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=U84uZd7zOr&ssi=2728&lang=en&e=1
+[Trace] POST Text:  ciao 
+[Trace] Text:  ciao 
+[Trace] Ivona: U84uZd7zOr Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=U84uZd7zOr&ssi=2728&lang=en&e=1
+[Trace] POST Text: 123
+[Trace] Text: 123
+[Trace] Ivona: mD6slx1YwB Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=mD6slx1YwB&ssi=2728&lang=en&e=1
+[Trace] POST Text: alza il riscaldamento
+[Trace] Text: alza il riscaldamento
+[Trace] Ivona: GJv4tkk0Jm Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=GJv4tkk0Jm&ssi=2728&lang=en&e=1
+[Trace] POST Text: alza il volume
+[Trace] Text: alza il volume
+[Trace] Ivona: sAA6n8wxhu Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=sAA6n8wxhu&ssi=2728&lang=en&e=1
+[Trace] POST Text: cibo
+[Trace] Text: cibo
+[Trace] Ivona: vmYuBrlQdv Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=vmYuBrlQdv&ssi=2728&lang=en&e=1
+[Trace] POST Text: tv
+[Trace] Text: tv
+[Trace] Ivona: 6ePEZ4kZT7 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=6ePEZ4kZT7&ssi=2728&lang=en&e=1
+[Trace] POST Text: si
+[Trace] Text: si
+[Trace] Ivona: uPd0wdKuyk Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=uPd0wdKuyk&ssi=2728&lang=en&e=1
+[Trace] POST Text: felice
+[Trace] Text: felice
+[Trace] Ivona: SS0Oca1RCN Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=SS0Oca1RCN&ssi=2728&lang=en&e=1
+[Trace] POST Text: Ciao franca 
+[Trace] Text: Ciao franca 
+[Trace] Ivona: zNestgsu2g Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=zNestgsu2g&ssi=2728&lang=en&e=1
+[Trace] POST Text: Ciao franca 
+[Trace] Text: Ciao franca 
+[Trace] Ivona: zNestgsu2g Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=zNestgsu2g&ssi=2728&lang=en&e=1
+[Trace] POST Text: Ciao franca Francamaria 
+[Trace] Text: Ciao franca Francamaria 
+[Trace] Ivona: 7RvAUEUBL5 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=7RvAUEUBL5&ssi=2728&lang=en&e=1
+[Trace] POST Text: Ciao franca Francamaria franato 
+[Trace] Text: Ciao franca Francamaria franato 
+[Trace] Ivona: u3MxODyHRQ Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=u3MxODyHRQ&ssi=2728&lang=en&e=1
+[Trace] POST Text: Ciao Franca come stai? Io bene ed ho voglia di darti un bacio!
+[Trace] Text: Ciao Franca come stai? Io bene ed ho voglia di darti un bacio!
+[Trace] Ivona: f1wbW7m9wn Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=f1wbW7m9wn&ssi=2728&lang=en&e=1
+[Trace] POST Text: ABCDEU
+[Trace] Text: ABCDEU
+[Trace] Ivona: yO1jzdbTem Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=yO1jzdbTem&ssi=2728&lang=en&e=1
+[Trace] POST Text: ABCDEU
+[Trace] Text: ABCDEU
+[Trace] Ivona: yO1jzdbTem Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=yO1jzdbTem&ssi=2728&lang=en&e=1
+[Trace] POST Text: ABCDEU
+[Trace] Text: ABCDEU
+[Trace] Ivona: yO1jzdbTem Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=yO1jzdbTem&ssi=2728&lang=en&e=1
+[Trace] POST Text:  oggi è una bella giornata però piove
+[Trace] Text:  oggi è una bella giornata però piove
+[Trace] Ivona: aHqhvvHj3D Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=aHqhvvHj3D&ssi=2728&lang=en&e=1
+[Trace] POST Text:  oggi è una bella giornata però piove
+[Trace] Text:  oggi è una bella giornata però piove
+[Trace] Ivona: aHqhvvHj3D Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=aHqhvvHj3D&ssi=2728&lang=en&e=1
+[Trace] POST Text:  oggi è una bella giornata però pioveNCJCNDJCKDOIFDOFIOSIOISOI
+[Trace] Text:  oggi è una bella giornata però pioveNCJCNDJCKDOIFDOFIOSIOISOI
+[Trace] Ivona: efsknmtgbY Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=efsknmtgbY&ssi=2728&lang=en&e=1
+[Trace] POST Text:  oggi è una bella giornata però pioveNCJCNDJCKDOIFDOFIOSIOISOISESESESEE
+[Trace] Text:  oggi è una bella giornata però pioveNCJCNDJCKDOIFDOFIOSIOISOISESESESEE
+[Trace] Ivona: 4aUQ0BAZv4 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=4aUQ0BAZv4&ssi=2728&lang=en&e=1
+[Trace] POST Text:  oggi è una bella giornata però pioveNCJCNDJCKDOIFDOFIOSIOISOISESESESEEJIEORFOIERIEUUKLUCM8UCYTOMRCI9TF8MYUC
+[Trace] Text:  oggi è una bella giornata però pioveNCJCNDJCKDOIFDOFIOSIOISOISESESESEEJIEORFOIERIEUUKLUCM8UCYTOMRCI9TF8MYUC
+[Trace] Ivona: YmaU9FZaZn Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=YmaU9FZaZn&ssi=2728&lang=en&e=1
+[Trace] POST Text: cibo
+[Trace] Text: cibo
+[Trace] Ivona: vmYuBrlQdv Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=vmYuBrlQdv&ssi=2728&lang=en&e=1
+[Trace] POST Text: tv
+[Trace] Text: tv
+[Trace] Ivona: 6ePEZ4kZT7 Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=6ePEZ4kZT7&ssi=2728&lang=en&e=1
+[Trace] POST Text: Ciao ciao bambina, un bacio ancora e poi per sempre ti perderò
+[Trace] Text: Ciao ciao bambina, un bacio ancora e poi per sempre ti perderò
+[Trace] Ivona: gooW5sMcaQ Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=gooW5sMcaQ&ssi=2728&lang=en&e=1
+[Trace] POST Text: Ciao ciao bambina, un bacio ancora e poi per sempre ti perderò
+[Trace] Text: Ciao ciao bambina, un bacio ancora e poi per sempre ti perderò
+[Trace] Ivona: gooW5sMcaQ Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=gooW5sMcaQ&ssi=2728&lang=en&e=1
+[Trace] POST Text: Ciao ciao bambina, un bacio ancora e poi per sempre ti perderò
+[Trace] Text: Ciao ciao bambina, un bacio ancora e poi per sempre ti perderò
+[Trace] Ivona: IWjCMJVQxk Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=IWjCMJVQxk&ssi=2728&lang=en&e=1
+[Trace] POST Text:  habitat 
+[Trace] Text:  habitat 
+[Trace] Ivona: sUN0GXW7ns Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=sUN0GXW7ns&ssi=2728&lang=en&e=1
+[Trace] POST Text:  tabacchiera 
+[Trace] Text:  tabacchiera 
+[Trace] Ivona: c6xjmcybwR Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=c6xjmcybwR&ssi=2728&lang=en&e=1
+[Trace] POST Text: CIAO ANCONA
+[Trace] Text: CIAO ANCONA
+[Trace] Ivona: GYHT6k5lUi Price 150 -> http://www.ivona.com/online/fileSaas.php?fi=GYHT6k5lUi&ssi=2728&lang=en&e=1

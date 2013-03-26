@@ -36,6 +36,21 @@ include "./functions.php";
 	<script type="text/javascript" src="scripts/jquery.jplayer.min.js"></script>
 	<script type="text/javascript" src="scripts/jquery.jplayer.inspector.js"></script>
 
+	<script type="text/javascript">
+	
+	var ttse = 'festival';
+	
+	<?
+	$ttse = 'festival';
+
+	if (isset($_GET['ttse']) && ($_GET['ttse'] == 'ivona')) {
+		$ttse = 'ivona';
+		echo "ttse = 'ivona';";
+	}
+	?>
+
+	</script>
+
 	<script type="text/javascript" src="scripts/utils.js"></script>
 	<link type="text/css" href="css/general.css" rel="stylesheet" />
 </head>
@@ -46,16 +61,16 @@ include "./functions.php";
 
 <table id="homemenu" cellspacing="10px" cellpadding="0">
 <tr class="homerow">
-	<td class="left"><a href="speechboard_base.php?lang=it"><img src="images/home/menu_speechboardbase.png" /></a></td>
-	<td class="left"><a href="speechboard.php?lang=it"><img src="images/home/menu_speechboard.png" /></a></td>
+	<td class="left"><a href="speechboard_base.php?lang=it&amp;ttse=<? echo $ttse; ?>"><img src="images/home/menu_speechboardbase.png" /></a></td>
+	<td class="left"><a href="speechboard.php?lang=it&amp;ttse=<? echo $ttse; ?>"><img src="images/home/menu_speechboard.png" /></a></td>
 </tr>
 <tr class="homerow">
-	<td class="left"><a href="imageboard.php?lang=it"><img src="images/home/menu_imageboard.png" /></a></td>
-	<td class="right"><a href="wordboard.php?lang=it"><img src="images/home/menu_wordboard.png" /></a></td>
+	<td class="left"><a href="imageboard.php?lang=it&amp;ttse=<? echo $ttse; ?>"><img src="images/home/menu_imageboard.png" /></a></td>
+	<td class="right"><a href="wordboard.php?lang=it&amp;ttse=<? echo $ttse; ?>"><img src="images/home/menu_wordboard.png" /></a></td>
 </tr>
 
 <tr class="homerow">
-	<td class="left"><a href="software.php"><img src="images/home/menu_software.png" /></a></td>
+	<td class="left"><a href="software.php"><img src="images/home/menu_software.png" alt="software image"/></a></td>
 	<td class="logoright"><a href="http://www.informaticisenzafrontiere.org"><img src="images/home/menu_logo.png" /></a></td>
 </tr>
 
