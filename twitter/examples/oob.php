@@ -23,7 +23,8 @@ $tmhOAuth = new tmhOAuth(array(
   'consumer_secret' => 'YOUR_CONSUMER_SECRET',
 ));
 
-function welcome() {
+function welcome()
+{
   echo <<<EOM
 tmhOAuth PHP Out-of-band.
 This script runs the OAuth flow in out-of-band mode. You will need access to
@@ -33,7 +34,8 @@ be presented with the user token and secret needed to authenticate as the user.
 EOM;
 }
 
-function request_token($tmhOAuth) {
+function request_token($tmhOAuth)
+{
   $code = $tmhOAuth->request('POST', $tmhOAuth->url('oauth/request_token', ''), array(
     'oauth_callback' => 'oob',
   ));
@@ -58,7 +60,8 @@ EOM;
   }
 }
 
-function access_token($tmhOAuth, $pin) {
+function access_token($tmhOAuth, $pin)
+{
   $code = $tmhOAuth->request('POST', $tmhOAuth->url('oauth/access_token', ''), array(
     'oauth_verifier' => trim($pin)
   ));

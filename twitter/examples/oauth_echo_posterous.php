@@ -66,7 +66,8 @@ if ($code == 200) {
   die();
 }
 
-function generate_verify_header($tmhOAuth, $x_auth_service_provider) {
+function generate_verify_header($tmhOAuth, $x_auth_service_provider)
+{
   // generate the verify crendentials header -- BUT DON'T SEND
   // we prevent the request because we're not the ones sending the verify_credentials request, the delegator is
   $tmhOAuth->config['prevent_request'] = true;
@@ -74,7 +75,8 @@ function generate_verify_header($tmhOAuth, $x_auth_service_provider) {
   $tmhOAuth->config['prevent_request'] = false;
 }
 
-function prepare_request($tmhOAuth, $x_auth_service_provider, $media, $media_type='image/jpeg') {
+function prepare_request($tmhOAuth, $x_auth_service_provider, $media, $media_type='image/jpeg')
+{
   // create the headers for the echo
   $headers = array(
     'X-Auth-Service-Provider'            => $x_auth_service_provider,
@@ -93,8 +95,10 @@ function prepare_request($tmhOAuth, $x_auth_service_provider, $media, $media_typ
   return $params;
 }
 
-function make_request($tmhOAuth, $url, $params, $auth, $multipart) {
+function make_request($tmhOAuth, $url, $params, $auth, $multipart)
+{
   // make the request, no auth, multipart, custom headers
   $code = $tmhOAuth->request('POST', $url, $params, $auth, $multipart);
+
   return $code;
 }

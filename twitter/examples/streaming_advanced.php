@@ -27,7 +27,8 @@
 
 $count=0;
 $first_id=0;
-function my_streaming_callback($data, $length, $metrics) {
+function my_streaming_callback($data, $length, $metrics)
+{
   global $raw;
   if ($raw) :
     echo $data;
@@ -51,6 +52,7 @@ function my_streaming_callback($data, $length, $metrics) {
   if ($count==$limit) :
     return true;
   endif;
+
   return file_exists(dirname(__FILE__) . '/STOP');
 }
 
@@ -91,4 +93,3 @@ $raw = in_array($raw, $true);
 $tmhOAuth->streaming_request('POST', $method, $params, 'my_streaming_callback');
 if ($debug)
   var_dump($tmhOAuth);
-

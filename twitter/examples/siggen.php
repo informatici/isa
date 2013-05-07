@@ -23,7 +23,8 @@
 require '../tmhOAuth.php';
 require '../tmhUtilities.php';
 
-function welcome() {
+function welcome()
+{
   echo <<<EOM
 tmhOAuth PHP Signature Generator.
 This script generates an OAuth signature from adhoc values.

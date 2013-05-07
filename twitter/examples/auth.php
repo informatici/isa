@@ -34,7 +34,8 @@ $tmhOAuth = new tmhOAuth(array(
 $here = tmhUtilities::php_self();
 session_start();
 
-function outputError($tmhOAuth) {
+function outputError($tmhOAuth)
+{
   echo 'Error: ' . $tmhOAuth->response['response'] . PHP_EOL;
   tmhUtilities::pr($tmhOAuth);
 }

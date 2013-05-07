@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Makes the user whose user token and secret you use, unfollow the 
+ * Makes the user whose user token and secret you use, unfollow the
  * specified screen_name
  *
  * Although this example uses your user token/secret, you can use

@@ -35,7 +35,7 @@ $code = $tmhOAuth->request('POST', $tmhOAuth->url('1/statuses/update'), array(
 ));
 
 if ($code == 200) {
-	header('Location: twitt.php?status=post inviato correttamente');
+    header('Location: twitt.php?status=post inviato correttamente');
 } else {
   echo "Codici errati verificare e riprovare!<a href='javascript:history.go(-1)'>Torna indietro</a>";
 }

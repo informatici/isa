@@ -25,8 +25,10 @@
  * @author themattharris
  */
 
-function my_streaming_callback($data, $length, $metrics) {
+function my_streaming_callback($data, $length, $metrics)
+{
   echo $data .PHP_EOL;
+
   return file_exists(dirname(__FILE__) . '/STOP');
 }
 

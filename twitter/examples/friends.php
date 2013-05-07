@@ -33,7 +33,8 @@ $tmhOAuth = new tmhOAuth(array(
   'user_secret'     => 'A_USER_SECRET',
 ));
 
-function check_rate_limit($response) {
+function check_rate_limit($response)
+{
   $headers = $response['headers'];
   if ($headers['x_ratelimit_remaining'] == 0) :
     $reset = $headers['x_ratelimit_reset'];

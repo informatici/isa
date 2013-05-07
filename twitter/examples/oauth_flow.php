@@ -31,18 +31,21 @@ $tmhOAuth = new tmhOAuth(array(
 
 session_start();
 
-function outputError($tmhOAuth) {
+function outputError($tmhOAuth)
+{
   echo 'There was an error: ' . $tmhOAuth->response['response'] . PHP_EOL;
 }
 
-function wipe() {
+function wipe()
+{
   session_destroy();
   header('Location: ' . tmhUtilities::php_self());
 }
 
 
 // Step 1: Request a temporary token
-function request_token($tmhOAuth) {
+function request_token($tmhOAuth)
+{
   $code = $tmhOAuth->request(
     'POST',
     $tmhOAuth->url('oauth/request_token', ''),
@@ -61,7 +64,8 @@ function request_token($tmhOAuth) {
 
 
 // Step 2: Direct the user to the authorize web page
-function authorize($tmhOAuth) {
+function authorize($tmhOAuth)
+{
   $authurl = $tmhOAuth->url("oauth/authorize", '') .  "?oauth_token={$_SESSION['oauth']['oauth_token']}";
   header("Location: {$authurl}");
 
@@ -69,9 +73,9 @@ function authorize($tmhOAuth) {
   echo '<p>To complete the OAuth flow please visit URL: <a href="'. $authurl . '">' . $authurl . '</a></p>';
 }
 
-
 // Step 3: This is the code that runs when Twitter redirects the user to the callback. Exchange the temporary token for a permanent access token
-function access_token($tmhOAuth) {
+function access_token($tmhOAuth)
+{
   $tmhOAuth->config['user_token']  = $_SESSION['oauth']['oauth_token'];
   $tmhOAuth->config['user_secret'] = $_SESSION['oauth']['oauth_token_secret'];
 
@@ -92,9 +96,9 @@ function access_token($tmhOAuth) {
   }
 }
 
-
 // Step 4: Now the user has authenticated, do something with the permanent token and secret we received
-function verify_credentials($tmhOAuth) {
+function verify_credentials($tmhOAuth)
+{
   $tmhOAuth->config['user_token']  = $_SESSION['access_token']['oauth_token'];
   $tmhOAuth->config['user_secret'] = $_SESSION['access_token']['oauth_token_secret'];
 

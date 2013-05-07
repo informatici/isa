@@ -24,11 +24,13 @@
  * @author themattharris
  */
 
-function my_streaming_callback($data, $length, $metrics) {
+function my_streaming_callback($data, $length, $metrics)
+{
   // Twitter sends keep alive's in their streaming API.
-  // when this happens $data will appear empty. 
+  // when this happens $data will appear empty.
   // ref: https://dev.twitter.com/docs/streaming-apis/messages#Blank_lines
   echo $data .PHP_EOL;
+
   return file_exists(dirname(__FILE__) . '/STOP');
 }
 
@@ -48,7 +50,7 @@ $method = 'https://stream.twitter.com/1/statuses/filter.json';
 
 $params = array(
   // matches tweets containing 'twitter' 'Twitter' '#Twitter'
-  'track'     => 'twitter',  
+  'track'     => 'twitter',
   // matches tweets containing 'twitter' or 'love' (no spaces!)
   //'track'   => 'twitter,love'
   // matches tweets containing 'twitter' and 'love'
@@ -64,4 +66,3 @@ $tmhOAuth->streaming_request('POST', $method, $params, 'my_streaming_callback');
 
 // output any response we get back AFTER the Stream has stopped -- or it errors
 tmhUtilities::pr($tmhOAuth);
-

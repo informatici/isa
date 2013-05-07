@@ -40,5 +40,5 @@ $code = $tmhOAuth->request('GET', $tmhOAuth->url('1/account/verify_credentials')
 if ($code == 200) {
   header('Location: twitt.php');
 } else {
-  echo "Codici errati verificare e riprovare!<a href='javascript:history.go(-1)'>Torna indietro</a>";  
+  echo "Codici errati verificare e riprovare!<a href='javascript:history.go(-1)'>Torna indietro</a>";
 }

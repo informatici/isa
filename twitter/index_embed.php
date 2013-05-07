@@ -1,17 +1,17 @@
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 <script language="javascript" src="http://code.jquery.com/jquery-1.6.3.js"></script>
 <script type="text/javascript" src="jquery.innerfade.js"></script>
-<script type="text/javascript"> 
-	   $(document).ready(
-				function(){				
-					$('.tweet-wall').innerfade({
-						speed: 1000,
-						timeout: 5000,
-						type: 'sequence',
-						containerheight: '60px'
-					});
+<script type="text/javascript">
+       $(document).ready(
+                function(){
+                    $('.tweet-wall').innerfade({
+                        speed: 1000,
+                        timeout: 5000,
+                        type: 'sequence',
+                        containerheight: '60px'
+                    });
 
-			});
+            });
 </script>
 <link href="stile.css" rel="stylesheet" type="text/css" />
 </head>
@@ -44,11 +44,7 @@
 <span class='tempo'>meno di 1 minuto fa</span></li>
 <li>@<a rel="nofollow" target="_blank" class=" " href="https://twitter.com/BMS_Billy">BMS_Billy</a> his team is the Alamo City Lobos <em>from</em> south side of town. Vs fast camp eagles <em>from</em> Houston. TYFA state game on Sunday in Manor TX<br />
 <span class='tempo'>meno di 1 minuto fa</span></li>
-<li>Brooke Burke-Charvet Recovering <em>From</em> Surgery: 
-    
-            
-                    
-        
+<li>Brooke Burke-Charvet Recovering <em>From</em> Surgery:
 
 After yesterday’... <a rel="nofollow" target="_blank" href="http://t.co/HgMbbL6Q">http://t.co/HgMbbL6Q</a><br />
 <span class='tempo'>meno di 1 minuto fa</span></li>

@@ -1,38 +1,28 @@
-<?
+<?php
+
 /*
-	Copyright© 2012,2013 Informatici Senza Frontiere Onlus
-	http://www.informaticisenzafrontiere.org
+ * This file is part of the ISA package.
+ *
+ * (c) Informatici Senza Frontiere Onlus <http://informaticisenzafrontiere.org>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-    This file is part of "ISA" I Speak Again - ISF project for impaired and blind people.
-
-    "ISA" I Speak Again is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    "ISA" I Speak Again is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with "ISA" I Speak Again.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
-include "config.php"; 
-include "functions.php"; 
+include 'config.php';
+include 'functions.php';
 
 $parole['en'][] = array("I", "you", "we", "you", "them", "she", "him", "I", "my", "your", "our", "your", "his ");
 $parole['en'][] = array("yes", "no", "not", "I'm fine", "I", "have", "we", "is", "six", "you", "okay", "can");
 $parole['en'][] = array("family", "uncles", "grandparents", "mother", "daddy", "sister", "brother", "cousins", "children", "all");
 $parole['en'][] = array("want", "think", "drink", "eat", "sleep", "open", "change", "call", "go", "write");
 $parole['en'][] = array("read" , "a book", "a newspaper", "watch a movie", "watch TV", "listen to themusic", "listen to the radio", "I agree");
-$parole['en'][] = array("speak", "tell all", "how are you", "pulling", "celebration", "and as was the trip", "make me laugh", "are you okay");	
+$parole['en'][] = array("speak", "tell all", "how are you", "pulling", "celebration", "and as was the trip", "make me laugh", "are you okay");
 $parole['en'][] = array("warming up", "turn up the volume", "less light", "more light", "it hurts", "most of", "the most down", "hot", "cold");
 $parole['en'][] = array("window", "water", "cold drink", "fresh", "bath", "covered", "mobile", "clock");
 $parole['en'][] = array("being alone", "I'm angry", "I'm sad", "I'm disappointed" ,"the devil", "I'm sorry", "excuse me");
 $parole['en'][] = array("I want company","do not disturb me", "what a pleasure", "I love you", "I miss you", "thank you", "you're special");
-	
+
 $parole['it'][]  = array("io", "tu", "noi", "voi", "loro", "lei", "lui", "ti", "mia", "tua", "nostra", "vostra", "sua");
 $parole['it'][]  = array("si", "no","non", "sto bene", "ho", "hanno", "abbiamo", "e'", "sei", "siete","va bene", "puoi");
 $parole['it'][] = array("famiglia", "zii", "nonni", "mamma", "papa'", "sorella", "fratello", "cugini", "bambini", "tutti");
@@ -50,31 +40,31 @@ $parole['it'][] = array("voglio compagnia", "non mi disturbate", "che piacere", 
 <html lang="it-IT" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<title>.:: I Speak Again by ISF ::.</title>
-	<meta charset="utf-8">
-	
-	<script type="text/javascript" src="scripts/jquery.min.js"></script>
-	<script type="text/javascript" src="scripts/jquery.jplayer.min.js"></script>
-	<script type="text/javascript" src="scripts/jquery.jplayer.inspector.js"></script>
+    <title>.:: I Speak Again by ISF ::.</title>
+    <meta charset="utf-8">
 
-	<script type="text/javascript">
-	
-	var ttse = 'festival';
-	
-	<?
-	$ttse = 'festival';
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.jplayer.inspector.js"></script>
 
-	if (isset($_GET['ttse']) && ($_GET['ttse'] == 'ivona')) {
-		$ttse = 'ivona';
-		echo "ttse = 'ivona';";
-	}
-	?>
+    <script type="text/javascript">
 
-	</script>
-	
-	<script type="text/javascript" src="scripts/utils.js"></script>
-	<link type="text/css" href="css/general.css" rel="stylesheet" />
-	
+    var ttse = 'festival';
+
+    <?php
+    $ttse = 'festival';
+
+    if (isset($_GET['ttse']) && ($_GET['ttse'] == 'ivona')) {
+        $ttse = 'ivona';
+        echo "ttse = 'ivona';";
+    }
+    ?>
+
+    </script>
+
+    <script type="text/javascript" src="scripts/utils.js"></script>
+    <link type="text/css" href="css/general.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -87,21 +77,21 @@ $parole['it'][] = array("voglio compagnia", "non mi disturbate", "che piacere", 
 
 <div id="maincontainer">
 
-<? include "./leftcolumn.php"; ?>
+<?php include "./leftcolumn.php"; ?>
 
-	<div id="isa_words_content">
-	<? 	for ($i=0; $i<count($parole[$language]); $i++) { ?>
-		<div class="isa_words_row">
-	<? 		for ($j=0; $j<count($parole[$language][$i]); $j++) { ?>
-				<a class="track isa_word"><? echo $parole[$language][$i][$j]; ?></a>
-	<?		} ?>
-		</div>
-	<? } ?>
-	</div>
+    <div id="isa_words_content">
+    <?php 	for ($i=0; $i<count($parole[$language]); $i++) { ?>
+        <div class="isa_words_row">
+    <?php 		for ($j=0; $j<count($parole[$language][$i]); $j++) { ?>
+                <a class="track isa_word"><?php echo $parole[$language][$i][$j]; ?></a>
+    <?php		} ?>
+        </div>
+    <?php } ?>
+    </div>
 
 </div>
 
-<? include "./jplayer.php"; ?>
+<?php include "./jplayer.php"; ?>
 
 </div>
 

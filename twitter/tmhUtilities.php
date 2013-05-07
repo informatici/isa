@@ -9,7 +9,8 @@
  *
  * 04 September 2012
  */
-class tmhUtilities {
+class tmhUtilities
+{
   const VERSION = '0.5.0';
   /**
    * Entifies the tweet using the given entities element.
@@ -20,7 +21,8 @@ class tmhUtilities {
    * @param array $replacements if specified, the entities and their replacements will be stored to this variable
    * @return the tweet text with entities replaced with hyperlinks
    */
-  public static function entify($tweet, &$replacements=array()) {
+  public static function entify($tweet, &$replacements=array())
+  {
     return tmhUtilities::entify_with_options($tweet, array(), $replacements);
   }
 
@@ -33,7 +35,8 @@ class tmhUtilities {
    * @param array $replacements if specified, the entities and their replacements will be stored to this variable
    * @return the tweet text with entities replaced with hyperlinks
    */
-  public static function entify_with_options($tweet, $options=array(), &$replacements=array()) {
+  public static function entify_with_options($tweet, $options=array(), &$replacements=array())
+  {
     $default_opts = array(
       'encoding' => 'UTF-8',
       'target'   => '',
@@ -100,6 +103,7 @@ class tmhUtilities {
     );
 
     mb_internal_encoding($encoding);
+
     return $entified_tweet;
   }
 
@@ -109,7 +113,8 @@ class tmhUtilities {
    * @param bool $dropqs whether to drop the querystring or not. Default true
    * @return string the current URL
    */
-  public static function php_self($dropqs=true) {
+  public static function php_self($dropqs=true)
+  {
     $protocol = 'http';
     if (isset($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) == 'on') {
       $protocol = 'https';
@@ -144,7 +149,8 @@ class tmhUtilities {
       return $url;
   }
 
-  public static function is_cli() {
+  public static function is_cli()
+  {
     return (PHP_SAPI == 'cli' && empty($_SERVER['REMOTE_ADDR']));
   }
 
@@ -153,8 +159,8 @@ class tmhUtilities {
    *
    * @param mixes $obj
    */
-  public static function pr($obj) {
-
+  public static function pr($obj)
+  {
     if (!self::is_cli())
       echo '<pre style="word-wrap: break-word">';
     if ( is_object($obj) )
@@ -185,7 +191,8 @@ class tmhUtilities {
    * @param string $useauth whether to use authentication when making the request. Default true.
    * @param string $multipart whether this request contains multipart data. Default false
    */
-  public static function auto_fix_time_request($tmhOAuth, $method, $url, $params=array(), $useauth=true, $multipart=false) {
+  public static function auto_fix_time_request($tmhOAuth, $method, $url, $params=array(), $useauth=true, $multipart=false)
+  {
     $tmhOAuth->request($method, $url, $params, $useauth, $multipart);
 
     // if we're not doing auth the timestamp isn't important
@@ -205,6 +212,7 @@ class tmhUtilities {
     $tmhOAuth->auto_fixed_time = true;
     $tmhOAuth->config['force_timestamp'] = true;
     $tmhOAuth->config['timestamp'] = strtotime($tmhOAuth->response['headers']['date']);
+
     return $tmhOAuth->request($method, $url, $params, $useauth, $multipart);
   }
 
@@ -214,10 +222,12 @@ class tmhUtilities {
    * @param string $prompt the text to display to the user
    * @return the text entered by the user
    */
-  public static function read_input($prompt) {
+  public static function read_input($prompt)
+  {
     echo $prompt;
     $handle = fopen("php://stdin","r");
     $data = fgets($handle);
+
     return trim($data);
   }
 
@@ -230,7 +240,8 @@ class tmhUtilities {
    * @return string
    * @url http://www.dasprids.de/blog/2008/08/22/getting-a-password-hidden-from-stdin-with-php-cli
    */
-  public static function read_password($prompt, $stars=false) {
+  public static function read_password($prompt, $stars=false)
+  {
     echo $prompt;
     $style = shell_exec('stty -g');
 
@@ -248,8 +259,7 @@ class tmhUtilities {
           if (strlen($password) > 0) {
             fwrite(STDOUT, "\x08 \x08");
             $password = substr($password, 0, -1);
-          }
-        else
+          } else
           fwrite(STDOUT, "*");
           $password .= $char;
         endif;
@@ -259,6 +269,7 @@ class tmhUtilities {
     // Reset
     shell_exec('stty ' . $style);
     echo PHP_EOL;
+
     return $password;
   }
 
@@ -269,7 +280,8 @@ class tmhUtilities {
    * @param string $needle the string to check $haystack ends with
    * @return true if $haystack ends with $needle, false otherwise
    */
-  public static function endswith($haystack, $needle) {
+  public static function endswith($haystack, $needle)
+  {
     $haylen  = strlen($haystack);
     $needlelen = strlen($needle);
     if ($needlelen > $haylen)

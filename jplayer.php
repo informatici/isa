@@ -1,31 +1,22 @@
-<?
+<?php
+
 /*
-	Copyright© 2012,2013 Informatici Senza Frontiere Onlus
-	http://www.informaticisenzafrontiere.org
+ * This file is part of the ISA package.
+ *
+ * (c) Informatici Senza Frontiere Onlus <http://informaticisenzafrontiere.org>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-    This file is part of "ISA" I Speak Again - ISF project for impaired and blind people.
-
-    "ISA" I Speak Again is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    "ISA" I Speak Again is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with "ISA" I Speak Again.  If not, see <http://www.gnu.org/licenses/>.
-*/
 ?>
 
 <div id="jquery_jplayer"></div>
 
-<form name="speechform" id="speechform" method="post" action="ajax_<? echo $ttse; ?>.php" class="sjbjl_form">
-	<input type="hidden" name="speech" id="speech" />
-	<input type="hidden" name="volume_scale" id="volume_scale" value="1"> 
-	<input type="hidden" name="language" id="language" value="<? echo $language; ?>" />
+<form name="speechform" id="speechform" method="post" action="ajax_<?php echo $ttse; ?>.php" class="sjbjl_form">
+    <input type="hidden" name="speech" id="speech" />
+    <input type="hidden" name="volume_scale" id="volume_scale" value="1">
+    <input type="hidden" name="language" id="language" value="<?php echo $language; ?>" />
 </form>
 
 <a class="jp-play" href="#">Play</a>
