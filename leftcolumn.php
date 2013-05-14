@@ -21,8 +21,8 @@ if ($language == 'it') {
 
 <div id="isa_leftcolumn">
     <a href="index.php">home</a>
-    <a href="?lang=it" <?php echo $disable_it;?>><img src="./images/flag_it.png" /></a>
-    <a href="?lang=en" <?php echo $disable_en;?>><img src="./images/flag_en.png" /></a>
+    <a href="?lang=it&amp;ttse=<? echo $ttse; ?>" <?php echo $disable_it;?>><img src="./images/flag_it.png" /></a>
+    <a href="?lang=en&amp;ttse=<? echo $ttse; ?>" <?php echo $disable_en;?>><img src="./images/flag_en.png" /></a>
     <a href="speechboard_base.php?lang=<?php echo $language; ?>&amp;ttse=<?php echo $ttse; ?>"><img src="./images/home/menu_speechboardbase.png" /></a>
     <a href="speechboard.php?lang=<?php echo $language; ?>&amp;ttse=<?php echo $ttse; ?>"><img src="./images/home/menu_speechboard.png" /></a>
     <a href="wordboard.php?lang=<?php echo $language; ?>&amp;ttse=<?php echo $ttse; ?>"><img src="./images/home/menu_wordboard.png" /></a>
