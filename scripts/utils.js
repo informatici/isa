@@ -1,22 +1,11 @@
 /*
-	Copyright© 2012,2013 Informatici Senza Frontiere Onlus
-	http://www.informaticisenzafrontiere.org
-
-    This file is part of "ISA" I Speak Again - ISF project for impaired and blind people.
-
-    "ISA" I Speak Again is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    "ISA" I Speak Again is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with "ISA" I Speak Again.  If not, see <http://www.gnu.org/licenses/>.
-*/
+ * This file is part of the ISA package.
+ *
+ * (c) Informatici Senza Frontiere Onlus <http://informaticisenzafrontiere.org>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
 function xt9_load() {
 	thema_value = $('#isa_writtentext').val();
@@ -131,9 +120,10 @@ $(document).ready(function() {
 	// Instance jPlayer
 	my_jPlayer.jPlayer({
 		swfPath: "scripts",
-		cssSelectorAncestor: "#isa_words_content",
+		cssSelectorAncestor:"#container",
 		supplied: "mp3",
-		wmode: "window"
+		wmode: "window",
+		solution:"flash,html"
 	});
 
 	// Create click handlers for the different tracks
@@ -156,7 +146,6 @@ $(document).ready(function() {
 	$("#isa_tts_button").click(function(e) {
 	
 		var comodo = $('#isa_writtentext').val();
-		comodo = comodo.replace(/[^a-z0-9]/gi,'');
 
 		$('#speech').val(comodo);
 		isa_tts(my_jPlayer);
@@ -205,6 +194,14 @@ function isa_tts(my_jPlayer) {
 		
 		case 'ivona':
 		$.post('ajax_ivona.php', $('#speechform').serialize(), function(msg) {
+			my_jPlayer.jPlayer("setMedia", {
+				mp3: msg
+			}).jPlayer("play");
+		});
+		break;
+
+		case 'tingwo':
+		$.post('ajax_tingwo.php', $('#speechform').serialize(), function(msg) {
 			my_jPlayer.jPlayer("setMedia", {
 				mp3: msg
 			}).jPlayer("play");
