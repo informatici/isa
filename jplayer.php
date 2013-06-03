@@ -19,9 +19,11 @@
     <input type="hidden" name="language" id="language" value="<?php echo $language; ?>" />
 </form>
 
-<a class="jp-play" href="#">Play</a>
-<a class="jp-pause" href="#">Pause</a>
-<a class="jp-stop" href="#">Stop</a>
-<a class="jp-mute" href="#">Mute</a>
-<a class="jp-unmute" href="#">Unmute</a>
-<a class="jp-volume-max" href="#">Max</a>
+<div id="jp-commands">
+    <a class="jp-play" href="#">Play</a>
+    <a class="jp-pause" href="#">Pause</a>
+    <a class="jp-stop" href="#">Stop</a>
+    <a class="jp-mute" href="#">Mute</a>
+    <a class="jp-unmute" href="#">Unmute</a>
+    <a class="jp-volume-max" href="#">Max</a>
+</div>

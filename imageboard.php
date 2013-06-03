@@ -12,15 +12,23 @@
 include 'config.php';
 include 'functions.php';
 
-$parole['en'][]  = array("windowopen", "food", "tv","yes","happy");
-$parole['en'][]  = array("windowclose", "water","music","no","sad");
-$parole['en'][] = array("kiss", "toilette", "light", "people","hot");
-$parole['en'][] = array("heart", "sleep", "dark", "alone","cold");
 
-$parole['it'][]  = array("finestraaperta", "cibo", "tv","si","felice");
-$parole['it'][]  = array("finestrachiusa", "acqua","musica","no","triste");
-$parole['it'][] = array("bacio", "bagno","luce","persone", "caldo");
-$parole['it'][] = array("cuore", "sonno","buio","solo", "freddo");
+$parole['imag'][]  = array("finestraaperta","cibo","tv","sigrazie","felice");
+$parole['text']['en'][]  = array("Open the window, please.", "Some food, please. I am angry", "I want to watch tv","yes, thanks.","I am happy!");
+$parole['text']['it'][]  = array("Apri la finestra, per favore", "Vorrei del cibo, ho fame", "Vorrei guardare la tv","si, grazie.","Sono felice");
+
+
+$parole['imag'][]  = array("finestrachiusa", "acqua","musica","nograzie","triste");
+$parole['text']['en'][]  = array("Close the window, please.", "Some water, please, I'm thirsty","I want listen music","no, thanks","I'm sad");
+$parole['text']['it'][]  = array("Chiudi la finestra, per favore.", "Vorrei dell'acqua, ho sete.","Vorrei ascoltare della musica.","no, grazie.","Sono triste.");
+
+$parole['imag'][] = array("bacio", "bagno","luce","persone","caldo");
+$parole['text']['en'][] = array("kiss", "I must go to the toilette", "Turn the light on, please.", "I wanna see people","It's hot");
+$parole['text']['it'][] = array("Eccoti un bacio.", "Devo andare in bagno.","Accendi la luce, per favore.","Vorrei vedere gente.", "Fa caldo.");
+
+$parole['imag'][] = array("cuore", "sonno","buio","solo","freddo");
+$parole['text']['en'][] = array("my heart is for you.", "I want to sleep", "Turn the light off, please", "I want to be alone","It's cold");
+$parole['text']['it'][] = array("il mio cuore &egrave; per te.", "Ho sonno.","Spegni la luce per favore.","Vorrei restare solo.", "Ho freddo");
 
 ?>
 <!DOCTYPE html>
@@ -37,14 +45,18 @@ $parole['it'][] = array("cuore", "sonno","buio","solo", "freddo");
 
     <script type="text/javascript">
 
-    var ttse = 'festival';
+    var ttse = 'tingwo';
 
     <?php
-    $ttse = 'festival';
+    $ttse = 'tingwo';
 
     if (isset($_GET['ttse']) && ($_GET['ttse'] == 'ivona')) {
         $ttse = 'ivona';
         echo "ttse = 'ivona';";
+    }
+    if (isset($_GET['ttse']) && ($_GET['ttse'] == 'festival')) {
+        $ttse = 'festival';
+        echo "ttse = 'festival';";
     }
     ?>
 
@@ -68,11 +80,11 @@ $parole['it'][] = array("cuore", "sonno","buio","solo", "freddo");
 <?php include "./leftcolumn.php"; ?>
 
     <div id="isa_images_content">
-    <?php 	for ($i=0; $i<count($parole[$language]); $i++) { ?>
+    <?php   for ($i=0; $i<count($parole['imag']); $i++) { ?>
         <div class="isa_images_row">
-    <?php 		for ($j=0; $j<count($parole[$language][$i]); $j++) { ?>
-                <a class="track isa_word"><img src="images/board/<?php echo $parole['it'][$i][$j]; ?>.png" title="<?php echo $parole[$language][$i][$j]; ?>" /></a>
-    <?php		} ?>
+    <?php       for ($j=0; $j<count($parole['imag'][$i]); $j++) { ?>
+                <a class="track isa_word"><img src="images/board/<?php echo $parole['imag'][$i][$j]; ?>.png" title="<?php echo $parole['text'][$language][$i][$j]; ?>" /></a>
+    <?php       } ?>
         </div>
     <?php } ?>
     </div>

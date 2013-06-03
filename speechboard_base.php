@@ -30,14 +30,18 @@ include 'functions.php';
 
     <script type="text/javascript">
 
-    var ttse = 'festival';
+    var ttse = 'tingwo';
 
     <?php
-    $ttse = 'festival';
+    $ttse = 'tingwo';
 
     if (isset($_GET['ttse']) && ($_GET['ttse'] == 'ivona')) {
         $ttse = 'ivona';
         echo "ttse = 'ivona';";
+    }
+    if (isset($_GET['ttse']) && ($_GET['ttse'] == 'festival')) {
+        $ttse = 'festival';
+        echo "ttse = 'festival';";
     }
     ?>
 
