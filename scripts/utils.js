@@ -64,7 +64,9 @@ function isa_write(char_to_write) {
 		break;
 
 		case 'browse':
-		$('#isa_browser').addClass('loader').attr('src',$('#isa_writtentext').val()).slideDown('slow');
+        var url = $('#isa_writtentext').val();
+        if(url.indexOf("http://") == -1) url = "http://" + url;
+		$('#isa_browser').addClass('loader').attr('src', url).slideDown('slow');
 		$('#back_to_isa').slideDown('slow');
 		$('#container').slideUp('slow');
 		break;
