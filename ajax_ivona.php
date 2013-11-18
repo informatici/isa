@@ -46,8 +46,8 @@ if (isset($_POST["speech"]) && ($_POST["speech"] != '')) {
     if ($speech != '') {
 
         $soap = new SoapClient('http://www.ivona.com/saasapiwsdl.xml');
-        $token = $soap->__soapCall('getToken', array('email'=>'gennaro.delcampo@informaticisenzafrontiere.org'));
-        $apikey = 'uWQn9cm8xnTadi3HXLRjz12f2KNTL27u';
+        $token = $soap->__soapCall('getToken', array('email'=>'<enabled_customer_email>'));
+        $apikey = '<apikey>';
         // the text should be read 86% slower
         $params[] = array('key' => 'Prosody-Rate', 'value' => '100');
         // 2.5s of pause between paragraphs
