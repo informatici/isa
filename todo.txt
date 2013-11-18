@@ -1,12 +1,12 @@
-- ho provato varie URL (posso trascinare i bookmark direttamente sul campo e vanno) ma il browser interno non mi carica mai niente
-- per aprire una URL ci si aspetta un URL completo, ovvero http://www.website.example --> 
-forse è un po' troppo... se scrivo solo "google.co.uk" mi aspetto che ci vada, e di corsa anche... :p
+- ho provato varie URL (posso trascinare i bookmark direttamente sul campo e
+  vanno) ma il browser interno non mi carica mai niente
 
 - sulla tastiera tutta CAPITAL è praticamente inutile poter scrivere una URL
 
-- tornando indietro dalla navigazione con "< back to ISA I Speak Again"
+- tornando indietro dalla navigazione con "< back to ISA I Speak Again" il
+  campo di input appare vuoto, ma alla pressione di una lettera qualsiasi
+  ricompare l'URL precedente + la lettera appena premuta
 
-il campo di input appare vuoto, ma alla pressione di una lettera qualsiasi ricompare l'URL precedente + la lettera appena premuta
-
-- il tasto back del browser (quello reale) mantiene una history differente da quella visualizzata se si considerano le "navigate" 
-come pagine a sé stanti (e così sembra dalla user experience)
+- il tasto back del browser (quello reale) mantiene una history differente da
+  quella visualizzata se si considerano le "navigate" come pagine a sé stanti
+  (e così sembra dalla user experience)

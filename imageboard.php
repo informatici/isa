@@ -80,10 +80,10 @@ $parole['text']['it'][] = array("il mio cuore &egrave; per te.", "Ho sonno.","Sp
 <?php include "./leftcolumn.php"; ?>
 
     <div id="isa_images_content">
-    <?php   for ($i=0; $i<count($parole['imag']); $i++) { ?>
+    <?php for ($i=0; $i<count($parole['imag']); $i++) { ?>
         <div class="isa_images_row">
-    <?php       for ($j=0; $j<count($parole['imag'][$i]); $j++) { ?>
-                <a class="track isa_word"><img src="images/board/<?php echo $parole['imag'][$i][$j]; ?>.png" title="<?php echo $parole['text'][$language][$i][$j]; ?>" /></a>
+    <?php for ($j=0; $j<count($parole['imag'][$i]); $j++) { ?>
+            <a class="track isa_word"><img src="images/board/<?php echo $parole['imag'][$i][$j]; ?>.png" title="<?php echo $parole['text'][$language][$i][$j]; ?>" /></a>
     <?php       } ?>
         </div>
     <?php } ?>
