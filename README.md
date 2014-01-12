@@ -18,6 +18,12 @@ engines.
 
 [Festival]: http://www.cstr.ed.ac.uk/projects/festival/
 
+I.M.A. - I Move Again
+=====================
+This branch includes the IMA module. IMA allows to control a wheelchair using
+a eye tracking system. The module integrates a virtual joystick to steer the
+wheelchair and interacts with Arduino through a USB cable connection.
+
 Contributing
 ============
 
