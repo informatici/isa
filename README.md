@@ -1,5 +1,7 @@
-I.S.A. - I Speak Again
-======================
+I.S.A. - I Speak Again - TESTING
+================================
+
+**This is a developing version**
 
 I.S.A., which stands for I Speak Again, is a virtual keyboard to help speech
 and mobility impaired people (like people with ALS disease). It's made up of
