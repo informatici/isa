@@ -16,18 +16,45 @@ switch ($_GET['function']) {
 
     case 'xt9_query':
     if (isset($_GET['param1']) && ($_GET['param1'] != '')) {
-        $query = "SELECT DISTINCT * FROM xt9_dictionary_" . $language . " WHERE word LIKE '" . trim($_GET['param1']) . "%' ORDER BY hits DESC,word ASC LIMIT 12;";
+	
+		$partial_word = trim($_GET['param1']);
+	
+        $query = "SELECT DISTINCT * FROM xt9_dictionary_" . $language . " WHERE word LIKE '" . $partial_word . "%' ORDER BY hits DESC,LENGTH(word) ASC,word ASC LIMIT 8;";
         $result = mysql_query($query) or $esito = mysql_error();
+		$rows_number = mysql_num_rows($result);
+		
+		if (($rows_number < 8) && (strlen($partial_word)>1)) {
+			$query = "SELECT DISTINCT * FROM xt9_dictionary_" . $language . " WHERE ";
+			$letters = str_split($partial_word);
+			for ($i=1; $i<count($letters); $i++) {
+				$query .= "word LIKE '" . str_replace($letters[$i],"_",$partial_word) . "%' OR ";
+				if ($i == (count($letters)-1)) {
+					$query .= "word LIKE '" . str_replace($letters[$i],"%",$partial_word) . "' ";
+				}
+			}
+			$query .= " ORDER BY hits DESC,LENGTH(word) ASC, word ASC LIMIT 8;";
+			$result = mysql_query($query) or $esito = mysql_error();
 
-        while ($linea = mysql_fetch_array($result, MYSQL_ASSOC)) {
-            if ($linea['word'] == 'http') {
-                echo '<input type="button" class="xt9_word" value="http" onclick="xt9_replace_word(this.value,false);" />';
-                echo '<input type="button" class="xt9_word" value="http://" onclick="xt9_replace_word(this.value,false);" />';
-                echo '<input type="button" class="xt9_word" value="http://www." onclick="xt9_replace_word(this.value,false);" />';
-            } else {
-                echo '<input type="button" class="xt9_word" value="' . $linea['word'] . '" onclick="xt9_replace_word(this.value,true);" />';
-            }
-        }
+		}
+
+		$rows_number = mysql_num_rows($result);
+		
+		if ($rows_number > 0) {
+		
+			while ($linea = mysql_fetch_array($result, MYSQL_ASSOC)) {
+				if (($linea['word'] == 'http') || ($linea['word'] == 'www')) {
+					echo '<input type="button" class="xt9_word" value="http" onclick="xt9_replace_word(this.value,false);" />';
+					echo '<input type="button" class="xt9_word" value="http://" onclick="xt9_replace_word(this.value,false);" />';
+					echo '<input type="button" class="xt9_word" value="http://www." onclick="xt9_replace_word(this.value,false);" />';
+					break;
+				} else {
+					if (strlen($linea['word']) > 1) {
+						echo '<input type="button" class="xt9_word" value="' . $linea['word'] . '" onclick="xt9_replace_word(this.value,true);" />';
+					}
+				}
+			}
+			
+		}
     }
     break;
 

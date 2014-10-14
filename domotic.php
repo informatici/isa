@@ -11,6 +11,7 @@
 
 include 'config.php';
 include 'functions.php';
+
 ?>
 <!DOCTYPE html>
 
@@ -50,24 +51,32 @@ include 'functions.php';
 		</td>
 	</tr>
 	<tr>
-		<td id="wordboard_container">
+		<td id="domotic_container">
 
 			<table>
-			<?php for ($i=0; $i<count($parole[$language]); $i++) { ?>
-				<tr>
-			<?php for ($j=0; $j<count($parole[$language][$i]); $j++) { ?>
-					<td class="isa_words_row">
-						<a class="track isa_word"><?php echo $parole[$language][$i][$j]; ?></a>
-					</td>
-			<?php } ?>
-				</tr>
-			<?php } ?>
+			
+			<? for ($j=0; $j<3; $j++) {
+			
+				echo "<tr>";
+				
+					for ($i=1; $i<4; $i++) {
+						
+						$disabled = '';
+						if ($domotic_switch[$j][$i]) {$disabled = ' disabled';}
+						
+						echo "<td class='domo_switch " . $disabled . "'><button class='OFF' value='" . ($i+(3*$j)) . "'><span>" . ($i+(3*$j)) . "</span></button></td>";
+					}
+				
+				echo "</tr>";			
+			
+			} ?>
+			
 			</table>
 
 		</td>
 	</tr>
 </table>
-	
+
 <?php include "./jplayer.php"; ?>
 
 </div>

@@ -1,0 +1,29 @@
+table#isa_menu td a:hover {
+	cursor:none !important;
+}
+
+td#keyboard_container table td a  {
+	cursor:none !important;
+}
+
+input:hover.xt9_word {
+	cursor:none !important;
+}
+
+div.isa_images_row a.isa_word {
+	cursor:none !important;
+}
+
+td#wordboard_container table td a.isa_word {
+	cursor:none !important;
+}
+
+td#domotic_container table td button:hover {
+	cursor:none !important;
+}
+
+td#keyboard_container table td.fullbutton a:hover,
+td#keyboard_container table td.halfbutton a:hover,
+td#keyboard_container table td.quarterbutton a:hover {
+	background-image:url(../images/button_hover.png);
+}
